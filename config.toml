@@ -134,7 +134,7 @@ summaryLength = 120 # サマリーの長さを120単語にする
 
 [[Params.widgets.social.custom]]
   title = "Slack"
-  url = "https:w1554361529-tev506983.slack.com"
+  url = "https://w1554361529-tev506983.slack.com"
 
 [[Params.widgets.social.custom]]
   title = "OneDrive"
@@ -147,6 +147,10 @@ summaryLength = 120 # サマリーの長さを120単語にする
 [[Params.widgets.social.custom]]
   title = "Google Calendar"
   url = "https://calendar.google.com/calendar"
+
+[[Params.widgets.social.custom]]
+  title = "YouTube"
+  url = "https://www.youtube.com/channel/UCO3SW9xZ5DoPOcvdPX7DaFg/videos"
 
 [[Params.widgets.social.custom]]
   title = "Jupyter on crab"

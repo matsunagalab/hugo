@@ -13,7 +13,7 @@ menu:
 
 * 200TB storage (RAID)
 
-* 512GB Memory machine for large-scale data analysis
+* 512GB memory node for large data analysis
 
 * 5 computation nodes with the follwing GPUs
 

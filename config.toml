@@ -141,6 +141,10 @@ summaryLength = 120 # サマリーの長さを120単語にする
   url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
 
 [[Params.widgets.social.custom]]
+  title = "Docker Hub"
+  url = "https://hub.docker.com/u/matsunagalab"
+
+[[Params.widgets.social.custom]]
   title = "Google Calendar"
   url = "https://calendar.google.com/calendar"
 

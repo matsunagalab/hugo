@@ -15,21 +15,20 @@ OpenMM http://openmm.org
 
 #### GitHubからハンズオン資料をダウンロード
 
-```
+```bash
 $ git clone https://github.com/matsunagalab/openmm-tutorials.git
-
 ```
 
 #### DockerのOpenMMイメージをダウンロード
 12GBほどあるので時間がかかります
 
-```
+```bash
 $ docker pull matsunagalab/openmm
 ```
 
 #### Docker経由でJupyterを起動
 
-```
+```bash
 $ cd openmm-tutorials/
 $ docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/work matsunagalab/openmm
 Executing the command: jupyter lab

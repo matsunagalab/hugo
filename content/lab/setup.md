@@ -43,7 +43,7 @@ categories:
 研究ではこのターミナルソフトの中で様々なコマンドを実行することが多いです。
 
 例えば、以下のコマンドを実行してください。MacOSのキーのリピートや認識が(再起動後に)速くなり、多少快適になります。最初のドルマークは無視してください。
-```
+```bash
 $ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 $ defaults write NSGlobalDomain KeyRepeat -int 2
 ```
@@ -55,65 +55,59 @@ $ defaults write NSGlobalDomain KeyRepeat -int 2
 HomebrewとはMacのアプリケーションのインストール・アンインストールを管理してくれるパッケージマネージャです。[ここ](https://brew.sh/index_ja)に従ってターミナルからインストールしてください。
 
 Homebrewでは`brew`というコマンドの後に、命令を書いてアプリケーションを探したりインストールすることができます。以下で、命令可能なコマンドを確認してみてください。
-```
+```bash
 $ brew help
 ```
 
 Slackをインストールします。別途ワークスペース情報を共有するので大学のOffice365メールアドレスでログインしてください。
-```
+```bash
 $ brew cask install slack
-
 ```
 
 Microsoft Office365とTeamsをインストールします。インストール後、起動時にアカウントが求められますので、大学のOffice365アカウントを使ってください。Teamsではmatsunagalabという「チーム」へ参加してテレビ会議で輪講やセミナーを行います(新型コロナ対応)。チームへ参加するために必要な「チームコード」は別途共有します。
-```
+```bash
 $ brew cask install microsoft-office microsoft-teams
-
 ```
 
 エディタであるAtomをインストールします。他のエディタのほうが好みである人はそれを使ってください。
-```
+```bash
 $ brew cask install atom
-
 ```
 
 FoldItをインストールします。FoldItはワシントン大学のBaker研により開発された構造探索・デザインゲームです。初回輪講までにぜひ遊んでみて、どこまで進められたか、どこが難しかったか教えてください。
-```
+```bash
 $ brew cask install foldit
-
 ```
 
 PyMOLをインストールします。PyMOLはタンパク質構造可視化ソフトで、輪講で勉強した構造に関する知識が実際のデータを使って確認できるようになります。
 
 PyMOLはUnix系OSのX Window System (GUI)を使っているので、まずはMacOSでX Window Systemを使えるようにするXQuartzをインストール必要があります。
-```
+```bash
 $ brew cask install xquartz
-
 ```
 
 その後、PyMOLをインストールします。
-```
+```bash
 $ brew tap brewsci/bio
 $ brew install pymol
 # インストールできていることを確認
 $ pymol -d "fetch 4akeA; center; show sticks"
-
 ```
 
 #### Dockerのインストールと実行の確認
 
 Dockerはコンテナ型仮想アプリケーションの実行環境であり開発環境です。シミュレーションや解析系のコンパイル・インストールが難しいアプリケーションはこれを使って実行します。これも`brew`でインストールできます。
-```
+```bash
 $ brew cask install docker
 ```
 
 Dockerの動作確認を兼ねて、Dockerを使って、データ解析系の環境であるJupyterを起動してみましょう。以下のコマンドを実行して出てくるアドレスをブラウザへ貼り付けてみてください。Ctrl+cで終了します。
-```
+```bash
 $ docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work jupyter/datascience-notebook
 ```
 
 また、Dockerを使って、分子シミュレーションソフトのGENESISを起動してみましょう。以下のコマンドでGENESISの計算エンジンである`spdyn`の簡易ヘルプを表示します。
-```
+```bash
 $ docker run --rm -v $(pwd):/work -w /work/ ymatsunaga/genesis mpirun -np 8 spdyn
 ```
 

@@ -33,7 +33,7 @@ categories:
 オープンソース版をインストールします。現状、MacOSにはHomebrew経由でいれるのがよいです。HomebrewはAnacondaと相性が悪いので、Anacondaはアンインストールするか、pyenvで環境をわけるのが推奨です。
 
 HomebrewでPyMOLをインストールするには森脇さん謹製のHomebrewレシピを使わせてもらいます https://qiita.com/Ag_smith/items/58e917710c4eddab46ee
-```
+```bash
 $ brew tap brewsci/bio
 $ brew install pymol
 ```
@@ -57,11 +57,11 @@ $ brew install pymol
 #### コマンドの文法
 
 PyMOLのコマンドは以下のような文法になっています。
-```
+```bash
 何かの処理 オブジェクト
 ```
 例えば
-```
+```bash
 center all
 ```
 というコマンドは、全てのオブジェクト(all)を真ん中へ移動させる(center)という処理を行います。
@@ -72,7 +72,7 @@ center all
 
 実際にコマンドを実行しながら、処理やselectionのやり方を見ていきましょう
 
-```
+```python
 # PDBから PDB ID=1ake の chain=Aの構造をダウンロードする
 fetch 1akeA
 
@@ -130,7 +130,7 @@ show sphere, organic around 5.0 and solvent
 #### 他のよく使うコマンド
 
 構造の取得、ファイルの読み込み
-```
+```bash
 #PDB-IDを指定してPDBから構造データをとってくる
 fetch 4ake
 #更に、Chain=Aを指定する
@@ -140,13 +140,13 @@ load 4ake.pdb
 ```
 
 Pymol session(pseファイル)の保存と読み込み
-```
+```bash
 save 4ake.pse
 load 4ake.pse
 ```
 
 画像ファイルとして保存
-```
+```bash
 # レイトレーシングして綺麗にしてから
 ray
 # pngへ保存
@@ -154,34 +154,34 @@ png 4ake.png
 ```
 
 PyMOLの初期化
-```
+```bash
 reinitialize
 ```
 
 表示の変更
-```
+```bash
 showは表示を加える
 asはその表示だけにする
 hideは表示を隠す
 ```
 
 ヘルプ
-```
+```bash
 help コマンド名
 ```
 
 構造の重ね合わせ
-```
+```bash
 align mobile, target
 super mobile, target
 ```
 
 背景色を変える
-```
+```bash
 bg_color white
 ```
 
-```
+```bash
 create, select
 
 center, orient, zoom
@@ -193,7 +193,7 @@ set
 Sceneとは構造の表示や見ている角度を含んだ現在の可視化状態のことを言います。PyMOLではこのSceneを何個も保存して、後で気軽に呼び出すことができます。
 
 Sceneの保存
-```
+```bash
 scene new, store
 # またはメニューから保存
 # またはFn+Cmd+→ on Mac
@@ -201,7 +201,7 @@ scene new, store
 ```
 
 Sceneの呼び出し
-```
+```bash
 # 左下のSceneボタンをクリック
 ```
 
@@ -222,13 +222,13 @@ Sceneの呼び出し
 確認したらその都度sceneとして保存していきましょう。最後にpseとして保存しましょう。
 
 初期化して構造をとってくる
-```
+```bash
 reinitialize
 fetch 4akeA
 ```
 
 二次構造と水素結合
-```
+```bash
 # 二次構造判定
 as cartoon
 dss #本当はdsspかstrideで二次構造判定することを推奨
@@ -238,7 +238,7 @@ Objectメニュー 4akeA->Action->find->polar contacts-> just intra-main chain
 ```
 
 疎水性
-```
+```bash
 # 疎水性残基を黄色で表示。内部に埋もれていることを確認する
 select hydrophobic, resn ala+cys+gly+val+ile+leu+phe+pro+met+trp+tyr
 show spheres, hydrophobic
@@ -246,7 +246,7 @@ color yellow, hydrophobic
 ```
 
 親水性
-```
+```bash
 # 親水性残基を黄色で表示。表面に露出していることを確認する
 select hydrophilic, resn arg+asn+asp+gln+glu+his+lys+ser+thr
 show spheres, hydrophilic
@@ -254,23 +254,23 @@ color blue, hydrophilic
 ```
 
 分子表面
-```
+```bash
 as surf
 ```
 
 Solvent accessible surface area (SASA)
-```
+```bash
 # PyMOLではSASAの値だけ
 Objectメニュー->4akeA->generate->compute->surface area->solvent accessible
 ```
 
 静電ポテンシャル
-```
+```bash
 Objectメニュー->4akeA->action->generate->vacuum electrostatics->protein contact potential (local)
 ```
 
 重ね合わせて構造比較
-```
+```bash
 reinitialize
 fetch 1akeA
 fetch 4akeA
@@ -278,7 +278,7 @@ align 4akeA, 1akeA
 ```
 
 結合ポケット
-```
+```bash
 # 簡易的であるがPyMOLのcavityモードを使う
 # タミフルでの例
 reinitialize
@@ -290,19 +290,19 @@ set surface_color, gray
 
 #### シミュレーショントラジェクトリの読み込み
 シェルの起動コマンドラインの引数で指定してしまうのが便利です
-```
+```bash
 $ pymol -d "load resources/alanine-dipeptide-implicit.pdb, obj, 0, pdb; load_traj output.dcd, obj, 0, dcd"
 ```
 シミュレーション結果は分子の並進・回転が入っているで重ね合わせをして取り除きます
-```
+```bash
 # polymerでタンパク質だけを指定して重ね合わせ
 intra_fit polymer
 ```
 
 #### 参考
-- PyMOL Wiki https://pymolwiki.org
-- 阪大 蛋白研 鈴木守先生のページ http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/install.php
-- 東大 森脇さんのPyMOL tutorial https://yoshitakamo.github.io/pymol-book/index.html
+- [PyMOL Wiki](https://pymolwiki.org)
+- [阪大 蛋白研 鈴木守先生のページ](http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/install.php)
+- [東大 森脇さんのPyMOL tutorial](https://yoshitakamo.github.io/pymol-book/index.html)
 
 
 

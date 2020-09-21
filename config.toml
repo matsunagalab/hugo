@@ -128,11 +128,6 @@ summaryLength = 120 # サマリーの長さを120単語にする
 #  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
 
 [[Params.widgets.social.custom]]
-  title = "OverLeaf"
-  url = "https://ja.overleaf.com/project"
-  icon = "svg/overleaf.svg"
-
-[[Params.widgets.social.custom]]
   title = "Slack"
   url = "https://w1554361529-tev506983.slack.com"
   icon = "svg/slack.svg"
@@ -141,6 +136,16 @@ summaryLength = 120 # サマリーの長さを120単語にする
   title = "OneDrive"
   url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
   icon = "svg/onedrive.svg"
+
+[[Params.widgets.social.custom]]
+  title = "OverLeaf"
+  url = "https://ja.overleaf.com/project"
+  icon = "svg/overleaf.svg"
+
+[[Params.widgets.social.custom]]
+  title = "Mendeley"
+  url = "https://www.mendeley.com/reference-manager/library/all-references"
+  icon = "svg/mendeley.svg"
 
 [[Params.widgets.social.custom]]
   title = "Docker Hub"

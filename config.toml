@@ -130,37 +130,45 @@ summaryLength = 120 # サマリーの長さを120単語にする
 [[Params.widgets.social.custom]]
   title = "OverLeaf"
   url = "https://ja.overleaf.com/project"
-  # icon = "overleaf.svg"
+  icon = "svg/overleaf.svg"
 
 [[Params.widgets.social.custom]]
   title = "Slack"
   url = "https://w1554361529-tev506983.slack.com"
+  icon = "svg/slack.svg"
 
 [[Params.widgets.social.custom]]
   title = "OneDrive"
   url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
+  icon = "svg/onedrive.svg"
 
 [[Params.widgets.social.custom]]
   title = "Docker Hub"
   url = "https://hub.docker.com/u/matsunagalab"
+  icon = "svg/docker.svg"
 
 [[Params.widgets.social.custom]]
   title = "Google Calendar"
   url = "https://calendar.google.com/calendar"
+  icon = "svg/calendar.svg"
 
 [[Params.widgets.social.custom]]
   title = "YouTube"
   url = "https://www.youtube.com/channel/UCO3SW9xZ5DoPOcvdPX7DaFg/videos"
+  icon = "svg/youtube.svg"
 
 [[Params.widgets.social.custom]]
   title = "Jupyter on crab"
   url = "http://192.168.1.101:8888/"
+  icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]
   title = "Jupyter on n1"
   url = "http://192.168.1.101:8889/"
+  icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]
   title = "Cluster monitoring"
   url = "http://192.168.1.101:3000/"
+  icon = "svg/author.svg"
 

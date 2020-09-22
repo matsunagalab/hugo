@@ -17,13 +17,13 @@ menu:
 
 * 5 computation nodes with the follwing GPUs
 
-* 2x NVIDIA Quadro RTX8000
+  * 2x NVIDIA Quadro RTX8000
 
-* 10x NVIDIA GTX 2080Ti
+  * 10x NVIDIA GTX 2080Ti
 
-* 20x NVIDIA GTX 1080Ti
+  * 20x NVIDIA GTX 1080Ti
 
-* 20x NVIDIA Titan-P
+  * 20x NVIDIA Titan-P
 
 ![Computers](computer2.jpg)
 

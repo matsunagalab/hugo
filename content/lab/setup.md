@@ -23,7 +23,7 @@ categories:
 
 - オンラインでの輪講やセミナーのためにMicrosoft Teamsを使えるようになる(新型コロナ対応)
 
-- プログラムのコーディングをするためにエディタ(Atom)を使えるようになる
+- プログラムのコーディングをするためにエディタ(Visual Studio Code)を使えるようになる
 
 - タンパク質構造に慣れるために構造ゲームソフトであるFoldItで遊べるようになる
 
@@ -69,9 +69,9 @@ Microsoft Office365とTeamsをインストールします。インストール�
 $ brew cask install microsoft-office microsoft-teams
 ```
 
-エディタであるAtomをインストールします。他のエディタのほうが好みである人はそれを使ってください。
+エディタであるVisual Studio Codeをインストールします。他のエディタのほうが好みである人はそれを使ってください。
 ```bash
-$ brew cask install atom
+$ brew cask install visual-studio-code
 ```
 
 FoldItをインストールします。FoldItはワシントン大学のBaker研により開発された構造探索・デザインゲームです。初回輪講までにぜひ遊んでみて、どこまで進められたか、どこが難しかったか教えてください。

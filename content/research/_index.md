@@ -166,14 +166,7 @@ menu:
 
 作成中
 
-<div class="video-wrapper">
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0ew3L2RbbQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-</div>
-<p align="center">
-タンパク質の粗視化モデルの粒子フィルタシミュレーション
-</p>
+{{< youtube 0ew3L2RbbQ0 >}}
 
 参考文献
 

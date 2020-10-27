@@ -11,16 +11,23 @@ menu:
 
 ### メンバー
 
-* 教員 [松永康佑 (Yasuhiro MATSUNAGA)](/member/matsunaga/)
+* 教員 [松永 康佑 (Yasuhiro MATSUNAGA)](/member/matsunaga/)
 
-* M2 中山浩彰 (Hiroaki NAKAYAMA)
+* M2 中山 浩彰 (Hiroaki NAKAYAMA)
 
-* M1 大金智則 (Tomonori OGANE)
+* M1 大金 智則 (Tomonori OGANE)
 
-* B4 5名
+* B4 櫻井 快 (Kai SAKURAI)
 
+* B4 近藤 悠貴 (Yuki KONDO)
+
+* B4 上田 祐衣 (Yui UEDA)
+
+* B4 東田 連 (Ren HIGASHIDA)
+
+* B4 山口 皓平 (Kohei YAMAGUCHI)
 
 ### OB・OG
 
-* 菱沼達也 (Tatsuya HISHINUMA) 2019年度学部卒
+* 菱沼 達也 (Tatsuya HISHINUMA) 2019年度学部卒
 

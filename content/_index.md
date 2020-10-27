@@ -12,6 +12,8 @@ draft: false
 
 ## News
 
+- [イベント] 2020年10月24日 学部4年生の5名が卒業論文の中間発表会で発表しました
+
 - [イベント] 2020年9月20日 [埼玉大学ハイグレード理数高校生育成プログラム(HiGEPS)](http://higeps.phy.saitama-u.ac.jp)の基礎セミナーで松永が「コンピュータで体をつくる分子をみる」という内容で話しました
 
 - [招待講演] 2020年9月16日〜18日にWeb開催された[第58回日本生物物理学会年会](https://www2.aeplan.co.jp/bsj2020/)におけるシンポジウム "Biofunctional Science of the Structural Fluctuations of Biomolecules and Drugs" (オーガナイザー：近畿大・米澤先生、宮下先生)で松永がタイトル"Integrative modeling of protein dynamics from single-molecule experiments and molecular dynamics simulations"で講演しました
@@ -32,7 +34,7 @@ draft: false
 
 - [イベント] 2020年4月1日 学部4年生の5名が配属されました
 
-- [イベント] 2020年2月17日 4年生の菱沼さんと大金さんが卒業論文を提出し、卒論発表を行いました
+- [イベント] 2020年2月17日 学部4年生の菱沼さんと大金さんが卒業論文を提出し、卒論発表を行いました
 
 - [論文] 2020年1月29日 Current Opinion in Structural Biologyに理化学研究所の杉田チームリーダとの総説論文"[Use of single-molecule time-series data for refining conformational dynamics in molecular simulations](https://doi.org/10.1016/j.sbi.2019.12.022)"が出版されました。我々が最近行ってきた計測と分子シミュレーションのデータ同化研究について執筆依頼されまとめたものです
 
@@ -40,7 +42,7 @@ draft: false
 
 - [講演] 2019年12月7日〜8日に大阪で行われたJSTさきがけ(情報計測)1期生課題事後評価会で松永の課題研究「生体分子動態解析のためのデータ同化基盤の開発と応用」について報告しました
 
-- [イベント] 2019年11月30日 修士1年生の中山さんが中間審査で発表しました
+- [イベント] 2019年11月30日 修士1年生の中山さんが修士論文の中間審査で発表しました
 
 - [論文] 2019年11月29日 Biophysics and Physicobiologyに理化学研究所の信夫研究員、小林研究員、杉田チームリーダとの論文"[Building a macro-mixing dual‑basin Gō model using the Multistate Bennett Acceptance Ratio](https://doi.org/10.2142/biophysico.16.0_310)"が出版されました。シミュレーションのデータ解析をして良いモデルパラメータを効率的に探索する内容の論文です。松永は理論面と解析プログラムの一部を担当しました
 

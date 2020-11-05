@@ -21,7 +21,7 @@ categories:
 
 - 資料作成のためにMicrosoft Office365(ワードやパワーポイント)を使えるようになる
 
-- オンラインでの輪講やセミナーのためにMicrosoft Teamsを使えるようになる(新型コロナ対応)
+- オンラインでの輪講やセミナーのためにZoomを使えるようになる(新型コロナ対応)
 
 - プログラムのコーディングをするためにエディタ(Visual Studio Code)を使えるようになる
 
@@ -64,9 +64,14 @@ Slackをインストールします。別途ワークスペース情報を共有
 $ brew cask install slack
 ```
 
-Microsoft Office365とTeamsをインストールします。インストール後、起動時にアカウントが求められますので、大学のOffice365アカウントを使ってください。Teamsではmatsunagalabという「チーム」へ参加してテレビ会議で輪講やセミナーを行います(新型コロナ対応)。チームへ参加するために必要な「チームコード」は別途共有します。
+Microsoft Office365をインストールします。インストール後、起動時にアカウントが求められますので、大学のOffice365アカウントを使ってください。
 ```bash
-$ brew cask install microsoft-office microsoft-teams
+$ brew cask install microsoft-office
+```
+
+Zoomをインストールします。
+```bash
+$ brew cask install zoomus
 ```
 
 エディタであるVisual Studio Codeをインストールします。他のエディタのほうが好みである人はそれを使ってください。

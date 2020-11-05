@@ -38,9 +38,9 @@ menu:
 
 ---
 
-### 研究トピックの詳しい説明
+#### 研究トピックの詳しい説明
 
-### 1. シミュレーション手法
+##### 1. シミュレーション手法
 
 分子シミュレーションは計算顕微鏡(computational microscope)とも呼ばれているように、
 ミクロな世界のふるまいを観察する有力な手法のひとつです。
@@ -104,7 +104,7 @@ menu:
 - C. Kobayashi, J. Jung, Y. Matsunaga, T. Mori, T. Ando, K. Tamura, M. Kamiya, and Y. Sugita,"[GENESIS 1.1: A hybrid-parallel molecular dynamics simulator with enhanced sampling algorithms on multiple computational platforms](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.24874)" Journal of Computational Chemistry 38, 2193-2206 (2017)
 
 
-### 2. 機械学習の応用
+##### 2. 機械学習の応用
 
 上で分子シミュレーションは「遅い」ことが欠点であると言いましたが、それでも計算機やアルゴリズムの進歩とともに、この30年で$10^{5}$倍もの速度向上が実現されてきました。
 生物物理という研究分野では、「タンパク質のフォールディング」という問題があります。
@@ -171,7 +171,7 @@ menu:
 - Y. Matsunaga, Y. Komuro, C. Kobayashi, J. Jung, T. Mori, and Y. Sugita, “[Dimensionality of Collective Variables for Describing Conformational Changes of a Multi-Domain Protein](https://pubs.acs.org/doi/10.1021/acs.jpclett.6b00317)” The Journal of Physical Chemistry Letters 7, 1446–1451 (2016)
 
 
-### 3. 実験データの統合
+##### 3. 実験データの統合
 
 作成中
 

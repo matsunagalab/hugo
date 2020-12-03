@@ -94,15 +94,17 @@ menu:
 
 {{< youtube Oi_I7B_qpJE >}}
 
-
 参考文献
 
+- [多剤排出トランスポーターの薬剤排出機構を解明 －スーパーコンピュータ「京」で巨大分子機械の動きを計算－](https://www.riken.jp/press/2018/20180312_1/)
+
+<!---
 - 松永康佑 "全原子分子動力学シミュレーションが解き明かす多剤排出トランスポーターAcrBの薬剤排出機構" 生物物理 59巻2号, 084-087 (2019) [DOI:10.2142/biophys.59.084](https://doi.org/10.2142/biophys.59.084)
 
 - Y. Matsunaga, T. Yamane, T. Terada, K. Moritsugu, H. Fujisaki, S. Murakami, M. Ikeguchi, and A. Kidera, "[Energetics and conformational pathways of functional rotation in the multidrug transporter AcrB](https://elifesciences.org/articles/31715)", eLife 7, e31715 (19 pages) (2018) (日本語による解説 「[多剤排出トランスポーターの薬剤排出機構を解明 －スーパーコンピュータ「京」で巨大分子機械の動きを計算－](http://www.riken.jp/pr/press/2018/20180312_1/)」)
 
 - C. Kobayashi, J. Jung, Y. Matsunaga, T. Mori, T. Ando, K. Tamura, M. Kamiya, and Y. Sugita,"[GENESIS 1.1: A hybrid-parallel molecular dynamics simulator with enhanced sampling algorithms on multiple computational platforms](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.24874)" Journal of Computational Chemistry 38, 2193-2206 (2017)
-
+-->
 
 ##### 2. 機械学習の応用
 
@@ -179,7 +181,7 @@ menu:
 
 参考文献
 
-- Y. Matsunaga, and Y. Sugita, “[Linking time-series of single-molecule experiments with molecular dynamics simulations by machine learning](https://elifesciences.org/articles/32668)”, eLife 7, e32668 (19 pages) (2018) (日本語による解説 「[1分子計測のデータ同化による生体分子構造ダイナミクス －小タンパク質が折り畳まれる際の中間構造・パスウェイを特定－](http://www.riken.jp/pr/press/2018/20180515_2/)」)
+- [1分子計測のデータ同化による生体分子構造ダイナミクス －小タンパク質が折り畳まれる際の中間構造・パスウェイを特定－](http://www.riken.jp/pr/press/2018/20180515_2/)
 
 
 <!---

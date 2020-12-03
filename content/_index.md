@@ -12,11 +12,15 @@ draft: false
 
 ## News
 
+- [書籍] 2020年12月14日 実験医学増刊「機械学習を生命科学に使う！」(編著 東大・小林先生、京大・杉村先生、慶応大・舟橋先生)の一節(分子シミュレーションと実験データを統合する機械学習手法)を執筆しました
+
+- [招待講演] 2020年12月2日〜4日にオンライン開催された[第43会日本分子生物学会年会](https://www2.aeplan.co.jp/mbsj2020/)におけるシンポジウム "Machine learning in biology" (オーガナイザー：京都大・杉村先生、東大・小林先生)で松永がタイトル"Integrative modeling of protein dynamics from experimental data and molecular dynamics simulations"で講演しました
+
 - [イベント] 2020年10月24日 学部4年生の5名が卒業論文の中間発表会で発表しました
 
 - [イベント] 2020年9月20日 [埼玉大学ハイグレード理数高校生育成プログラム(HiGEPS)](http://higeps.phy.saitama-u.ac.jp)の基礎セミナーで松永が「コンピュータで体をつくる分子をみる」という内容で話しました
 
-- [招待講演] 2020年9月16日〜18日にWeb開催された[第58回日本生物物理学会年会](https://www2.aeplan.co.jp/bsj2020/)におけるシンポジウム "Biofunctional Science of the Structural Fluctuations of Biomolecules and Drugs" (オーガナイザー：近畿大・米澤先生、宮下先生)で松永がタイトル"Integrative modeling of protein dynamics from single-molecule experiments and molecular dynamics simulations"で講演しました
+- [招待講演] 2020年9月16日〜18日にオンライン開催された[第58回日本生物物理学会年会](https://www2.aeplan.co.jp/bsj2020/)におけるシンポジウム "Biofunctional Science of the Structural Fluctuations of Biomolecules and Drugs" (オーガナイザー：近畿大・米澤先生、宮下先生)で松永がタイトル"Integrative modeling of protein dynamics from single-molecule experiments and molecular dynamics simulations"で講演しました
 
 - [招待講演] 2020年9月14日〜16日にWeb開催された[第93回日本生化学会](https://www2.aeplan.co.jp/jbs2020/)におけるシンポジウム「生体内計測技術が拓くタンパク質構造・機能相関と創薬展開」(オーガナイザー：産総研・竹内先生、徳島大・齋尾先生)で松永がタイトル「計測とシミュレーションを統合したタンパク質ダイナミクスのモデリング」で講演しました
 

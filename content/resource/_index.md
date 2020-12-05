@@ -25,7 +25,7 @@ menu:
 
   * 20x NVIDIA Titan-P
 
-![Computers](computer2.jpg)
+![Computers](computer3.jpg)
 
 ### Software
 

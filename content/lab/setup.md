@@ -15,11 +15,19 @@ categories:
 そのMacBook Proで、輪講やセミナーのスライド作成や、研究のコーディングや計算・解析(重たい計算はサーバでやりますが)、卒検発表のスライド作成と発表までほぼ全てを行ってもらいます。
 教員や他のメンバーとも環境が揃っていたほうが便利なことが多いので、環境のセットアップ手順をまとめます。
 
-以下の状態となることが目標です。各種ソフトウェアの具体的な使い方については、輪講後にハンズオンセミナーを行います：
+以下の状態となることが目標です。個々のソフトウェアの具体的な使い方については、輪講後にハンズオンセミナーを行います：
+
+- 適切なアカウント名を設定する
+
+- Macの基本的な使い方を知る
+
+- ターミナルでコマンドが打てるようになる
+
+- Homebrewをインストールしている
 
 - 研究室メンバーで連絡を取り合えるようにSlackを使えるようになる
 
-- 資料作成のためにMicrosoft Office365(ワードやパワーポイント)を使えるようになる
+- 資料作成のためにMicrosoft Office(ワードやパワーポイント)を使えるようになる
 
 - オンラインでの輪講やセミナーのためにZoomを使えるようになる(新型コロナ対応)
 
@@ -39,13 +47,21 @@ categories:
 
 - セキュリティを強化している
 
+#### 適切なアカウント名の設定
+
+Macを設定する途中で、アカウント名の入力が求められます。このアカウント名には、できる限りシンプルでユニークな英字を選んでください。というのは、ここで作成したアカウント名とPCクラスタで使用するアカウント名が揃っているととても便利です。PCクラスタで使用するアカウント名はキーボードを使ったコマンドで打ちやすいものでなければなりません。のちのちのためにシンプルでユニークな英字を選んでください。例えば、櫻井さんだったら `saku` や `skr` などが候補となります。
+
+#### Macの基本的な使い方を知る
+
+[ここ](https://help.apple.com/macos/big-sur/mac-basics/#apps)を一通り読んでMacの基本的な概念を学んでください。
+
 #### 「ターミナル」の起動
 
 まず、コマンドラインを実行するために、Macの「ターミナル」を「アプリケーション」 -> 「ユーティリティ」 -> 「ターミナル」 の順で立ち上げます。
 研究ではこのターミナルソフトの中で様々なコマンドを実行することが多いです。
 
 例えば、以下のコマンドを実行してください。MacOSのキーのリピートや認識が(再起動後に)速くなり、多少快適になります。最初のドルマークは無視してください。
-```bash
+```
 $ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 $ defaults write NSGlobalDomain KeyRepeat -int 2
 ```
@@ -57,44 +73,44 @@ $ defaults write NSGlobalDomain KeyRepeat -int 2
 HomebrewとはMacのアプリケーションのインストール・アンインストールを管理してくれるパッケージマネージャです。[ここ](https://brew.sh/index_ja)に従ってターミナルからインストールしてください。
 
 Homebrewでは`brew`というコマンドの後に、命令を書いてアプリケーションを探したりインストールすることができます。以下で、命令可能なコマンドを確認してみてください。
-```bash
+```
 $ brew help
 ```
 
-Slackをインストールします。別途ワークスペース情報を共有するので大学のOffice365メールアドレスでログインしてください。
-```bash
+Slackをインストールします。別途ワークスペース情報を共有するので大学のMicrosoft365メールアドレスでログインしてください。
+```
 $ brew cask install slack
 ```
 
-Microsoft Office365をインストールします。インストール後、起動時にアカウントが求められますので、大学のOffice365アカウントを使ってください。
-```bash
+Microsoft Officeをインストールします。インストール後、起動時にアカウントが求められますので、大学のMicrosoft365アカウントを使ってください。
+```
 $ brew cask install microsoft-office
 ```
 
 Zoomをインストールします。
-```bash
+```
 $ brew cask install zoomus
 ```
 
 エディタであるVisual Studio Codeをインストールします。他のエディタのほうが好みである人はそれを使ってください。
-```bash
+```
 $ brew cask install visual-studio-code
 ```
 
 FoldItをインストールします。FoldItはワシントン大学のBaker研により開発された構造探索・デザインゲームです。初回輪講までにぜひ遊んでみて、どこまで進められたか、どこが難しかったか教えてください。
-```bash
+```
 $ brew cask install foldit
 ```
 
 PyMOLをインストールします。PyMOLはタンパク質構造可視化ソフトで、輪講で勉強した構造に関する知識が実際のデータを使って確認できるようになります。
 
 PyMOLはUnix系OSのX Window System (GUI)を使っているので、まずはMacOSでX Window Systemを使えるようにするXQuartzをインストール必要があります。
-```bash
+```
 $ brew cask install xquartz
 ```
 
 その後、PyMOLをインストールします。
-```bash
+```
 $ brew tap brewsci/bio
 $ brew install pymol
 # インストールできていることを確認
@@ -104,17 +120,17 @@ $ pymol -d "fetch 4akeA; center; show sticks"
 #### Dockerのインストールと実行の確認
 
 Dockerはコンテナ型仮想アプリケーションの実行環境であり開発環境です。シミュレーションや解析系のコンパイル・インストールが難しいアプリケーションはこれを使って実行します。これも`brew`でインストールできます。
-```bash
+```
 $ brew cask install docker
 ```
 
 Dockerの動作確認を兼ねて、Dockerを使って、データ解析系の環境であるJupyterを起動してみましょう。以下のコマンドを実行して出てくるアドレスをブラウザへ貼り付けてみてください。Ctrl+cで終了します。
-```bash
+```
 $ docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work jupyter/datascience-notebook
 ```
 
 また、Dockerを使って、分子シミュレーションソフトのGENESISを起動してみましょう。以下のコマンドでGENESISの計算エンジンである`spdyn`の簡易ヘルプを表示します。
-```bash
+```
 $ docker run --rm -v $(pwd):/work -w /work/ ymatsunaga/genesis mpirun -np 8 spdyn
 ```
 

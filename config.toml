@@ -76,7 +76,7 @@ summaryLength = 120 # サマリーの長さを120単語にする
   #instagram = "username"
   #linkedin = "username"
   #telegram = "username"
-  github = "matsunagalab"
+  #github = "matsunagalab"
   #gitlab = "username"
   #bitbucket = "username"
   #email = "example@example.com"
@@ -128,8 +128,13 @@ summaryLength = 120 # サマリーの長さを120単語にする
 #  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
 
 [[Params.widgets.social.custom]]
+  title = "GitHub"
+  url = "https://github.com/orgs/matsunagalab/projects"
+  icon = "svg/github.svg"
+
+[[Params.widgets.social.custom]]
   title = "Slack"
-  url = "https://w1554361529-tev506983.slack.com"
+  url = "https://matsunagalab777.slack.com"
   icon = "svg/slack.svg"
 
 [[Params.widgets.social.custom]]
@@ -143,6 +148,11 @@ summaryLength = 120 # サマリーの長さを120単語にする
   icon = "svg/overleaf.svg"
 
 [[Params.widgets.social.custom]]
+  title = "Google Calendar"
+  url = "https://calendar.google.com/calendar"
+  icon = "svg/calendar.svg"
+
+[[Params.widgets.social.custom]]
   title = "Mendeley"
   url = "https://www.mendeley.com/reference-manager/library/all-references"
   icon = "svg/mendeley.svg"
@@ -151,11 +161,6 @@ summaryLength = 120 # サマリーの長さを120単語にする
   title = "Docker Hub"
   url = "https://hub.docker.com/u/matsunagalab"
   icon = "svg/docker.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Google Calendar"
-  url = "https://calendar.google.com/calendar"
-  icon = "svg/calendar.svg"
 
 [[Params.widgets.social.custom]]
   title = "YouTube"

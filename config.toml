@@ -1,5 +1,5 @@
 baseurl = "https://www.bio.ics.saitama-u.ac.jp"
-title = "埼玉大学松永研究室"
+title = "埼玉大学 松永研究室"
 languageCode = "ja-jp"
 paginate = "1" # Number of posts per page
 theme = "mainroad"
@@ -51,8 +51,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
 [Params.logo]
   #image = "img/placeholder.png" # Logo image. Path relative to "static"
   image = "AdK.png" # Logo image. Path relative to "static"
-  title = "埼玉大学松永研究室" # Logo title, otherwise will use site title
-  subtitle = "Matsunaga-lab Saitama University" # Logo subtitle
+  title = "埼玉大学 松永研究室" # Logo title, otherwise will use site title
+  subtitle = "Matsunaga Lab Saitama University" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page

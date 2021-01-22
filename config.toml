@@ -1,5 +1,5 @@
 baseurl = "https://www.bio.ics.saitama-u.ac.jp"
-title = "埼玉大学 松永研究室"
+title = "第1回 生体分子シミュレーション・モデリング研究会"
 languageCode = "ja-jp"
 paginate = "1" # Number of posts per page
 theme = "mainroad"
@@ -17,8 +17,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
 
 [Params]
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
-  description = "Website of Matsuanga-lab Saitama University" # Site description. Used in meta description
-  copyright = "Yasuhiro Matsunaga" # Footer copyright holder, otherwise will use site title
+  description = "Biomolecular simulation and modeling" # Site description. Used in meta description
+  copyright = "BSM" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -40,8 +40,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
 [Params.style.vars]
   #highlightColor = "#e22d30" # Override highlight color
   #highlightColor = "#ff9aa2" # Override highlight color
-  #highlightColor = "#177abe" # Override highlight color
-  highlightColor = "#d60435" # Override highlight color
+  highlightColor = "#177abe" # Override highlight color
+  #highlightColor = "#d60435" # Override highlight color
 
   # Override font-family sets. Secondary font-family set responsible for pre, code, kbd, and samp tags font
   # Take care of different quotes OR escaping symbols in these params if necessary
@@ -50,9 +50,9 @@ summaryLength = 120 # サマリーの長さを120単語にする
 
 [Params.logo]
   #image = "img/placeholder.png" # Logo image. Path relative to "static"
-  image = "AdK.png" # Logo image. Path relative to "static"
-  title = "埼玉大学 松永研究室" # Logo title, otherwise will use site title
-  subtitle = "Matsunaga Lab Saitama University" # Logo subtitle
+  image = "villin.png" # Logo image. Path relative to "static"
+  title = "第1回 生体分子シミュレーション・モデリング研究会" # Logo title, otherwise will use site title
+  subtitle = "Biomolecular simulation and modeling" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -81,104 +81,19 @@ summaryLength = 120 # サマリーの長さを120単語にする
   #bitbucket = "username"
   #email = "example@example.com"
 
-[[Menus.main]]
-  Name = "Main"
-  URL = "/"
-  weight = 1
+#[[Menus.main]]
+#  Name = "Main"
+#  URL = "/"
+#  weight = 1
 
-[[Menus.main]]
-  Name = "Research"
-  URL = "/research/"
-  weight = 2
-
-[[Menus.main]]
-  Name = "Resources"
-  URL = "/resource/"
-  weight = 3
-
-[[Menus.main]]
-  Name = "Publications"
-  URL = "/publication/"
-  weight = 4
-
-[[Menus.main]]
-  Name = "Members"
-  URL = "/member/"
-  weight = 5
-
-[[Menus.main]]
-  Name = "Teaching"
-  URL = "/teaching/"
-  weight = 6
-
-[[Menus.main]]
-  Name = "学生の皆さんへ"
-  URL = "/recruiting/"
-  weight = 7
-
-[[Menus.main]]
-  Name = "研究室内部向け"
-  URL = "/lab/"
-  weight = 8
+#[[Menus.main]]
+#  Name = "Research"
+#  URL = "/research/"
+#  weight = 2
 
 # Custom social links
 #[[Params.widgets.social.custom]]
 #  title = "Youtube"
 #  url = "https://youtube.com/user/username"
 #  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-
-[[Params.widgets.social.custom]]
-  title = "GitHub"
-  url = "https://github.com/orgs/matsunagalab/projects"
-  icon = "svg/github.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Slack"
-  url = "https://matsunagalab777.slack.com"
-  icon = "svg/slack.svg"
-
-[[Params.widgets.social.custom]]
-  title = "OneDrive"
-  url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
-  icon = "svg/onedrive.svg"
-
-[[Params.widgets.social.custom]]
-  title = "OverLeaf"
-  url = "https://ja.overleaf.com/project"
-  icon = "svg/overleaf.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Google Calendar"
-  url = "https://calendar.google.com/calendar"
-  icon = "svg/calendar.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Mendeley"
-  url = "https://www.mendeley.com/reference-manager/library/all-references"
-  icon = "svg/mendeley.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Docker Hub"
-  url = "https://hub.docker.com/u/matsunagalab"
-  icon = "svg/docker.svg"
-
-[[Params.widgets.social.custom]]
-  title = "YouTube"
-  url = "https://www.youtube.com/channel/UCO3SW9xZ5DoPOcvdPX7DaFg/videos"
-  icon = "svg/youtube.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Jupyter on crab"
-  url = "http://192.168.1.101:8888/"
-  icon = "svg/jupyter.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Jupyter on n1"
-  url = "http://192.168.1.101:8889/"
-  icon = "svg/jupyter.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Cluster monitoring"
-  url = "http://192.168.1.101:3000/"
-  icon = "svg/author.svg"
 

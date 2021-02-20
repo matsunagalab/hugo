@@ -22,7 +22,12 @@ $ cd openmpi-4.0.5/
 $ ./configure CC="$(brew --prefix)/bin/gcc-10" CXX="$(brew --prefix)/bin/g++-10" F77=gfortran FC=gfortran --enable-mpi-thread-multiple --prefix=/opt/openmpi-4.0.5
 $ make
 $ sudo make install
+```
 
+もし`configure`の際に以下のようなエラーが出たら、CommandLineToolsを再インストールする
+```bash
+$ sudo rm -rf /Library/Developer/CommandLineTools
+$ sudo xcode-select --install
 ```
 
 ```bash

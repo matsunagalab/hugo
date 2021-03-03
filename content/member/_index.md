@@ -19,7 +19,7 @@ menu:
 
 * B4 櫻井 快 (Kai SAKURAI)
 
-* B4 近藤 悠貴 (Yuki KONDO)
+* B4 近藤 悠貴 (Haruki KONDO)
 
 * B4 上田 祐衣 (Yui UEDA)
 

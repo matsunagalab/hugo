@@ -79,34 +79,34 @@ $ brew help
 
 Slackをインストールします。別途ワークスペース情報を共有するので大学のMicrosoft365メールアドレスでログインしてください。
 ```
-$ brew cask install slack
+$ brew install --cask slack
 ```
 
 Microsoft Officeをインストールします。インストール後、起動時にアカウントが求められますので、大学のMicrosoft365アカウントを使ってください。
 ```
-$ brew cask install microsoft-office
+$ brew install --cask microsoft-office
 ```
 
 Zoomをインストールします。
 ```
-$ brew cask install zoomus
+$ brew install --cask zoom
 ```
 
 エディタであるVisual Studio Codeをインストールします。他のエディタのほうが好みである人はそれを使ってください。
 ```
-$ brew cask install visual-studio-code
+$ brew install --cask visual-studio-code
 ```
 
 FoldItをインストールします。FoldItはワシントン大学のBaker研により開発された構造探索・デザインゲームです。初回輪講までにぜひ遊んでみて、どこまで進められたか、どこが難しかったか教えてください。
 ```
-$ brew cask install foldit
+$ brew install --cask foldit
 ```
 
 PyMOLをインストールします。PyMOLはタンパク質構造可視化ソフトで、輪講で勉強した構造に関する知識が実際のデータを使って確認できるようになります。
 
 PyMOLはUnix系OSのX Window System (GUI)を使っているので、まずはMacOSでX Window Systemを使えるようにするXQuartzをインストール必要があります。
 ```
-$ brew cask install xquartz
+$ brew install --cask xquartz
 ```
 
 その後、PyMOLをインストールします。
@@ -121,7 +121,7 @@ $ pymol -d "fetch 4akeA; center; show sticks"
 
 Dockerはコンテナ型仮想アプリケーションの実行環境であり開発環境です。シミュレーションや解析系のコンパイル・インストールが難しいアプリケーションはこれを使って実行します。これも`brew`でインストールできます。
 ```
-$ brew cask install docker
+$ brew install --cask docker
 ```
 
 Dockerの動作確認を兼ねて、Dockerを使って、データ解析系の環境であるJupyterを起動してみましょう。以下のコマンドを実行して出てくるアドレスをブラウザへ貼り付けてみてください。Ctrl+cで終了します。
@@ -134,9 +134,11 @@ $ docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/
 $ docker run --rm -v $(pwd):/work -w /work/ ymatsunaga/genesis mpirun -np 8 spdyn
 ```
 
+[](
 #### ウィルス対策ソフトウェアのインストール
 
 大学で契約しているウィルス対策ソフトを[ここ](https://www.itc.saitama-u.ac.jp/services/anti-virus.html)からインストールしてください。ライセンスの関係で学内ネットワークのみからインストールすることができます。
+)
 
 #### セキュリティを強化する
 

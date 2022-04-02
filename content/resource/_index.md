@@ -11,19 +11,11 @@ menu:
 
 ### Computers
 
-* 200TB storage (RAID)
+* Large storage with RAID
 
-* 512GB memory node for large data analysis
+* Large memory nodes for data analysis
 
-* 5 computation nodes with the follwing GPUs
-
-  * 2x NVIDIA Quadro RTX8000
-
-  * 10x NVIDIA GTX 2080Ti
-
-  * 20x NVIDIA GTX 1080Ti
-
-  * 20x NVIDIA Titan-P
+* Compute nodes with GPUs
 
 ![Computers](computer3.jpg)
 

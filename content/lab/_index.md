@@ -11,11 +11,11 @@ menu:
 
 ### 研究室内部向け
 
-
-- [Setup](setup/)
-- [Basics](basics/)
+- [Macの環境セットアップ](setup/)
+- [Macの基本的な使い方](basics/)
 - [PyMOL](pymol/)
 - [GENESIS](genesis/)
 - [OpenMM](openmm/)
-- [PC Cluster](pc_cluster/)
+- [PCクラスタの使い方](pc_cluster/)
+- [PCクラスタ管理メモ](admin/)
 

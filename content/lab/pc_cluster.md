@@ -7,7 +7,7 @@ categories:
   - "Lab"
 ---
 
-### PCクラスタ情報と初期設定
+### PCクラスタ情報
 
 #### クラスタの構成とストレージ環境
 
@@ -15,23 +15,82 @@ crabがログインノード兼ファイルサーバ。クラスタへログイ�
 
 crabを含めて、crabのネットワークに接続されている演算ノードのスペックは以下の通り。
 
-|  hostname  |  CPUコア数  |  メモリ容量   | GPU                |   主な用途                               | 
-|------------|------------|--------------|--------------------|-----------------------------------------|
-|  crab      |  64        | 512GB        | なし               | データ解析や機械学習など                   | 
-|  n1        |  64        | 64GB         | Titan(Pascal) 10基 | シミュレーション                          | 
-|  n2        |  64        | 64GB         | Titan(Pascal) 10基 | シミュレーション                          | 
-|  n3        |  64        | 64GB         | GTX1080Ti     10基 | シミュレーション                          | 
-|  n4        |  64        | 64GB         | GTX1080Ti     10基 | シミュレーション                          | 
-|  n5        |  32        | 64GB         | GTX2080Ti     10基 | シミュレーション                          | 
-|  m1        |  28        | 300GB        | Quadro RTX8000 2基 | データ解析や機械学習など                   | 
+|  hostname  |  CPUコア数  |  メモリ容量   | GPU                 |   主な用途                               | 
+|------------|------------|--------------|---------------------|-----------------------------------------|
+|  crab      |  64        | 512 GB       | なし                | データ解析や機械学習など                   | 
+|  n1        |  64        | 64 GB        | Titan(Pascal) 10基  | シミュレーション                          | 
+|  n2        |  64        | 64 GB        | Titan(Pascal) 10基  | シミュレーション                          | 
+|  n3        |  64        | 64 GB        | GTX1080Ti     10基  | シミュレーション                          | 
+|  n4        |  64        | 64 GB        | GTX1080Ti     10基  | シミュレーション                          | 
+|  n5        |  32        | 64 GB        | GTX2080Ti     10基  | シミュレーション                          | 
+|  m1        |  28        | 512 GB       | Quadro RTX8000 2基  | データ解析や機械学習など                   | 
+|  m2        |  14        | 64 GB        | A5000 1基 A6000 1基 | データ解析や機械学習など                   | 
 
 crabに接続されているハードディスクはRAIDで冗長化されており、主に2つのパーティションがある。どちらも演算ノードとNFSで共有されている。
 
-|  mount point  |  容量       |   主な用途                                 | 
-| ------------- | ----------- | ------------------------------------------|
-|  /home        |  73TB       | ホームディレクトリ　　　　 　　　　　　　　　  | 
-|  /data        |  117TB      | シミュレーションとデータ解析                 | 
-|  /data2       |  100TB      | シミュレーションとデータ解析                 | 
+|  mount point  |  容量           |   主な用途                                 | 
+| ------------- | --------------  | ------------------------------------------|
+|  /home        |  73 TB (RAID1)  | ホームディレクトリ　　　　 　　　　　　　　　  | 
+|  /data        |  117 TB (RAID10)| シミュレーションとデータ解析                 | 
+|  /data2       |  100 TB (RAID10)| シミュレーションとデータ解析                 | 
+
+---
+
+### slurmへのジョブの投入
+
+流れているジョブの確認
+
+```bash
+$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               115       all   isrest nakayama  R 1-22:49:43      1 n3
+               125       all isrest_t     yasu  R 1-00:09:45      1 n2
+```
+
+ジョブの投入
+```bash
+$ sbatch run.sh
+```
+
+ノードを指定してジョブを投入
+```bash
+$ sbatch -w n4 run.sh
+```
+
+更に、GPU枚数を指定してジョブを投入
+```bash
+$ sbatch --gres=gpu:2080:1 -w n5 run.sh
+```
+
+ジョブのキャンセル (JOB_IDを指定する。ここでは117とする)
+```bash
+$ scancel 127
+```
+
+JOB_ID=54が終わったら実行するジョブの投入 (chain jobs)
+```bash
+$ sbatch -w n1 --dependency=afterok:54 run.sh
+```
+
+ジョブスクリプトrun.shの例
+```bash
+#!/bin/bash
+#SBATCH -p all
+#SBATCH -J run # job name
+#SBATCH -n 1  # num of total mpi processes
+#SBATCH -c 1  # num of threads per mpi processes
+#SBATCH -o run.log
+
+# set GPU ID if needed
+# export CUDA_VISIBLE_DEVICES="0"
+
+# perform production with OpenMM
+namd3 +devices 0 +p 2 run.sh
+```
+
+---
+
+### 初期設定
 
 #### アカウントの作成
 
@@ -107,79 +166,5 @@ crabから計算ノードへも公開鍵認証できるか試してみる
 ```bash
 # on crab
 $ ssh n1
-```
-
-#### ローカルマシンでシニョリンのシミュレーションをながす
-
-まずはローカルマシンで正しく計算できるか確認
-```bash
-$ git clone https://github.com/matsunagalab/chignolin.git
-$ cd chignolin/
-$ docker run --rm -v $(pwd):/work -w /work matsunagalab/openmm python -u run.py
-```
-
-シミュレーション結果の構造がおかしくないかPyMOLで確認
-```bash
-$ pymol -d "load init.psf, obj, 0, psf; load_traj run.dcd, obj, 0, dcd; remove not polymer; remove h.; dss; show sticks; intra_fit all"
-```
-
-#### 計算ノードn2でシニョリンのシミュレーションをながす
-
-- シニョリンのインプットファイル https://github.com/matsunagalab/chignolin
-
-- シニョリンの参考文献1 https://www.aist.go.jp/aist_j/press_release/pr2004/pr20040810/pr20040810.html
-
-- シニョリンの参考文献2 https://www.jstage.jst.go.jp/article/mssj/12/2/12_2_2_11/_pdf/-char/ja
-
-まずは、とりあえずn2でシミュレーションがながれるか確認
-```bash
-$ ssh crab
-$ ssh n2
-$ cd /data/username/
-$ git clone https://github.com/matsunagalab/chignolin.git
-$ cd chignolin/
-$ docker run --privileged -u $(id -u):$(id -g) --rm -v $(pwd):/work -w /work crab:5000/openmm python -u run.py
-```
-
-ファイルを編集してGPU(CUDA)が効くようにする。速度が向上することを確認する
-```bash
-# on n2
-$ vi run.py #or emacs run.py
-$ docker run --privileged -u $(id -u):$(id -g) --rm -v $(pwd):/work -w /work crab:5000/openmm python -u run.py
-```
-
-crabからバッチジョブ的にn2へ長い計算をsubmitする
-```bash
-# on crab
-$ cd /data/username/chignolin/
-$ docker service create --name jobname  --constraint node.hostname==n2 --replicas 1 -u $(id -u):$(id -g) --restart-condition=none --mount type=bind,source=$(pwd),destination=/work --generic-resource "gpu=1" crab:5000/openmm python -m run.py
-# 投入されているジョブのリスト表示
-$ docker service ls
-# 計算の途中や終了後したジョブの標準出力をチェック
-$ docker service logs jobname
-# マニュアルでジョブを削除しなければならない
-$ docker service rm jobname
-```
-
-#### crabのjupyterを使って解析する
-
-linksのページから、jupyter on crabのリンクをたどる
-
-#### データをローカルマシンへコピーする
-
-単純にはscpコマンドを使う
-```bash
-$ scp -Cr username@crab:/data/username/chignolin ./
-```
-
-ディレクトリが巨大で、差分を少しずつローカルへコピーしたい場合などはrsyncを使う。最後のスラッシュは抜かさないように気をつける
-```bash
-$ rsync -auz -vv --stats --progress --exclude "*~" username@crab:/data/username/chignolin/ /home/username/path/to/
-```
-
-ローカルマシンへコピーしたら、シミュレーション結果の構造がおかしくないかPyMOLで確認
-```bash
-$ cd chignolin/
-$ pymol -d "load init.psf, obj, 0, psf; load_traj run.dcd, obj, 0, dcd; remove not polymer; remove h.; dss; show sticks; intra_fit all"
 ```
 

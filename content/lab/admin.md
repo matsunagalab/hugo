@@ -13,8 +13,17 @@ categories:
 
 ### Slurm
 
+Slurmの設定に関しては、日本語情報では以下が参考になる
+
+- http://www-fps.nifs.ac.jp/ito/memo/slurm01.html
+
+- https://biomodeling.co.jp/2019/11/06/slurmmpichcudaの設定centos7/
+
 #### mungeのインストール
 
+mungeは認証に使われる。
+本家の[ドキュメント](https://github.com/dun/munge/wiki/Installation-Guide)
+がよくまとまっているので、主にこれに従う。
 ubuntuの場合はパッケージでインストールできる。
 パッケージをインストールすると `munge` というユーザが自動的に作られる。
 
@@ -31,7 +40,9 @@ sudo apt install -y munge libmunge-dev libmunge2
 
 #### slurmのインストール
 
-コンパイルしてインストール。defaultでは `/usr/local` 以下へインストールされる。
+コンパイルしてインストール。本家の[ドキュメント](https://slurm.schedmd.com/quickstart_admin.html)
+は非常にわかりにくいが細かな情報はこれを読むしかない。
+defaultでは `/usr/local` 以下へインストールされる。
 Contorlのための `slumctld` と clientのための `slurmd` デーモンが作成される(他のもあるが割愛)。
 ```bash
 ./configure --with-hdf5=no
@@ -108,13 +119,23 @@ PartitionName=crab Nodes=crab Default=NO MaxTime=INFINITE State=UP
 PartitionName=all Nodes=crab,n[1-5],m1 Default=YES MaxTime=INFINITE State=UP
 ```
 
-また、Generic ResoucesとしてGPUを管理下に入れることができる。
+Generic ResoucesとしてGPUを管理下に入れている。
 GPUを搭載するCompute nodeでは、GPU を自動認識してもらうために同じ場所に `gres.conf` を作成。
 ```bash
 sudo echo "AutoDetect=nvml" >/usr/local/etc/gres.conf
 ```
 
-firewallを適用している場合にはslurm通信用のポートを解放する。
+`slurm.conf`の中で指定しているgpuの名前(例えば `Gres=gpu:titan:10`)を知るには、
+本家の[ドキュメント](https://slurm.schedmd.com/gres.html)によると、
+以下のようにすれば良いらしい。
+```
+To see the GPU name, set SlurmdDebug=debug2 in your slurm.conf and either restart or reconfigure slurmd and check the slurmd log. For example, with AutoDetect=nvml:
+```
+
+しかしgpuの名前を知るには、`slurm.conf`でとりあえず名前は指定せずにしておいて、
+`sudo slurmd -D` でデーモンを直接起動してnvmlからの出力を見るほうが楽である。
+
+その後、firewallを適用している場合にはslurm通信用のポートを解放する。
 ```bash
 sudo firewall-cmd --zone=external --add-port=6817/tcp --permanent
 sudo firewall-cmd --zone=external --add-port=6817/udp --permanent
@@ -154,10 +175,59 @@ sudo systemctl enable slurmd
 
 ### NIS
 
+新しめのUbuntuの場合は、以下でインストールできる。
+
+```
+$ sudo apt -y install nis
+```
+
+#### client
+
+`/etc/yp.conf` にNISドメイン名とサーバ名(orIPアドレス)を記入
+
+```
+domain NISドメイン名 server サーバ名
+```
+
+更に、`/etc/nsswitch.conf` の中のNISで共有したい情報に `nis` を追加
+
+
+```
+passwd:         files systemd nis
+group:          files systemd nis
+shadow:         files nis
+gshadow:        files
+
+hosts:          files mdns4_minimal [NOTFOUND=return] dns
+networks:       files
+
+protocols:      db files
+services:       db files
+ethers:         db files
+rpc:            db files
+
+netgroup:       nis
+```
+
+systemdでサービス起動。問題なければ登録する。
+```
+systemctl restart rpcbind nis 
+systemctl status nis
+systemctl enable rpcbind nis 
+```
+
+#### server
+
+`/etc/sysconfig/network` にNISドメイン名と、必要があればNISで用いるポート番号を登録。
+
+```
+NISDOMAIN=NISドメイン名
+YPSERV_ARGS="-p ポート番号"
+```
+
+必要に応じて、設定したポート番号を `firewall-cmd` で解放。
+
+サービスの登録。
+
 ---
-
-### NFS
-
----
-
 

@@ -176,9 +176,20 @@ sudo systemctl enable slurmd
 ### NIS
 
 新しめのUbuntuの場合は、以下でインストールできる。
+インストール時にNISドメイン名を聞かれるので入力する。
 
 ```
 $ sudo apt -y install nis
+```
+
+#### ホームディレクトリを空にする
+
+NISとNFSでホームディレクトリを共有する場合は、
+ローカルユーザのディレクトリがあってバッティングするとややこしいので
+ローカルユーザのディレクトリは別の場所へ移す。例えば `home_local` など。
+
+```
+sudo usermod -d /home_local/user_name user_name
 ```
 
 #### client
@@ -209,10 +220,27 @@ rpc:            db files
 netgroup:       nis
 ```
 
-systemdでサービス起動。問題なければ登録する。
+systemdでサービス起動。
 ```
 systemctl restart rpcbind nis 
 systemctl status nis
+```
+
+`ypwhich` でNISサーバまたはマップマスタの名前が返るはず。
+
+```
+ypwhich
+```
+
+`ypcat` でマップされた情報を確認できる。例えば
+
+```
+ypcat passwd
+```
+
+問題なければ登録する。
+
+```
 systemctl enable rpcbind nis 
 ```
 
@@ -224,6 +252,8 @@ systemctl enable rpcbind nis
 NISDOMAIN=NISドメイン名
 YPSERV_ARGS="-p ポート番号"
 ```
+
+`authconfig` でNISサーバ情報を登録する。
 
 必要に応じて、設定したポート番号を `firewall-cmd` で解放。
 

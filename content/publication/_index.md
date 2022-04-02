@@ -11,6 +11,18 @@ menu:
 
 ### Papers
 
+* T. Murakami, S. Kumachi, Y. Matsunaga, M. Sato, K. Wakabayashi-Nakao, H. Masaki, R. Yonehara, M. Motohashi, N. Nemoto, and M. Tsuchiya "Construction of a Humanized Artificial VHH Library Reproducing Structural Features of Camelid VHHs for Therapeutics" Antibodies 11, 10 (18 pages) (2022) [DOI:10.3390/antib11010010](https://doi.org/10.3390/antib11010010)
+
+* R. Higashida, Y. Matsunaga "Enhanced Conformational Sampling of Nanobody CDR H3 Loop by Generalized Replica-Exchange with Solute Tempering" Life 11, 1428 (13 pages) (2021) [DOI:10.3390/life11121428](https://doi.org/10.3390/life11121428)
+
+* 松永康佑、藤崎弘士、森次圭 "タンパク質の構造変化をどのように記述するか――生体分子におけるパスサンプリング手法の発展" 日本物理学会誌 76巻11号, 714-722 (2021)
+
+* C. Kobayashi, Y. Matsunaga, J. Jung, Y. Sugita "Structural and energetic analysis of metastable intermediate states in the E1P-E2P transition of Ca2+-ATPase", Proceeding of the National Academy of Sciences of the United States of America 118, e2105507118 (2021) [DOI:10.1073/pnas.2105507118](https://doi.org/10.1073/pnas.2105507118)
+
+* T. Niina, Y. Matsunaga, and S. Takada "Rigid-body fitting to atomic force microscopy images for inferring probe shape and biomolecular structure", PLoS Computational Biology 17, e1009215 (2021) [DOI:10.1371/journal.pcbi.1009215](https://doi.org/10.1371/journal.pcbi.1009215)
+
+* A. Shinobu, C. Kobayashi, Y. Matsunaga, and Y. Sugita “Coarse-Grained Modeling of Multiple Pathways in Conformational Transitions of Multi-Domain Proteins”, Journal of Chemical Information and Modeling 61, 2427–2443 (2021) [DOI:10.1021/acs.jcim.1c00286](https://doi.org/10.1021/acs.jcim.1c00286)
+
 * Y. Matsunaga, and Y. Sugita “Use of single-molecule time-series data for refining conformational dynamics in molecular simulations”, Current Opinion in Structural Biology 61, 153-159 (2020) [DOI:10.1016/j.sbi.2019.12.022](https://doi.org/10.1016/j.sbi.2019.12.022)
 
 * A. Shinobu, C. Kobayashi, Y. Matsunaga, and Y. Sugita “Building a macro-mixing dual‑basin Gō model using the Multistate Bennett Acceptance Ratio”, Biophysics and Physicobiology 16, 310-321 (2019) [DOI:10.2142/biophysico.16.0_310](https://doi.org/10.2142/biophysico.16.0_310)

@@ -152,10 +152,10 @@ summaryLength = 120 # サマリーの長さを120単語にする
   url = "https://calendar.google.com/calendar"
   icon = "svg/calendar.svg"
 
-[[Params.widgets.social.custom]]
-  title = "Mendeley"
-  url = "https://www.mendeley.com/reference-manager/library/all-references"
-  icon = "svg/mendeley.svg"
+#[[Params.widgets.social.custom]]
+#  title = "Mendeley"
+#  url = "https://www.mendeley.com/reference-manager/library/all-references"
+#  icon = "svg/mendeley.svg"
 
 [[Params.widgets.social.custom]]
   title = "Docker Hub"
@@ -173,8 +173,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
   icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]
-  title = "Jupyter on n1"
-  url = "http://192.168.1.101:8889/"
+  title = "Jupyter on m1"
+  url = "http://192.168.1.51:8000/"
   icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]

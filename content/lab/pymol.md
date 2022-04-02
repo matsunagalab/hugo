@@ -32,7 +32,7 @@ categories:
 
 オープンソース版をインストールします。現状、MacOSにはHomebrew経由でいれるのがよいです。HomebrewはAnacondaと相性が悪いので、Anacondaはアンインストールするか、pyenvで環境をわけるのが推奨です。
 
-HomebrewでPyMOLをインストールするには森脇さん謹製のHomebrewレシピを使わせてもらいます https://qiita.com/Ag_smith/items/58e917710c4eddab46ee
+HomebrewでPyMOLをインストールするには @Ag_smithさん 謹製のHomebrewレシピを使わせてもらいます https://qiita.com/Ag_smith/items/58e917710c4eddab46ee
 ```bash
 $ brew tap brewsci/bio
 $ brew install pymol
@@ -165,9 +165,14 @@ asはその表示だけにする
 hideは表示を隠す
 ```
 
-ヘルプ
+背景色を変える
 ```bash
-help コマンド名
+bg_color white
+```
+
+構造のセンタリング、方向調整、拡大
+```bash
+center, orient, zoom
 ```
 
 構造の重ね合わせ
@@ -176,17 +181,9 @@ align mobile, target
 super mobile, target
 ```
 
-背景色を変える
+ヘルプ
 ```bash
-bg_color white
-```
-
-```bash
-create, select
-
-center, orient, zoom
-
-set
+help コマンド名
 ```
 
 #### Scene(シーン)
@@ -210,7 +207,8 @@ Sceneの呼び出し
 1. 構造をとってくる
     - `fetch 4ake `
 1. 見やすい角度や表現でsceneを保存する
-    - `scene new, store`
+    - `scene 001, store`
+    - またはアップデートの時は、`scene 001, update`
 1. PyMOL session(pse)として保存する
     - `save myfile.pse`
 1. 次回作業する時はpseを開き、2へ戻る
@@ -234,7 +232,7 @@ as cartoon
 dss #本当はdsspかstrideで二次構造判定することを推奨
 # 主鎖の水素結合を表示
 as sticks, name c+n+o+ca
-Objectメニュー 4akeA->Action->find->polar contacts-> just intra-main chain
+Objectメニュー 4akeA -> Action -> find -> polar contacts -> just intra-main chain
 ```
 
 疎水性
@@ -261,12 +259,12 @@ as surf
 Solvent accessible surface area (SASA)
 ```bash
 # PyMOLではSASAの値だけ
-Objectメニュー->4akeA->generate->compute->surface area->solvent accessible
+Objectメニュー -> 4akeA -> compute -> surface area -> solvent accessible
 ```
 
 静電ポテンシャル
 ```bash
-Objectメニュー->4akeA->action->generate->vacuum electrostatics->protein contact potential (local)
+Objectメニュー -> 4akeA -> action -> generate -> vacuum electrostatics -> protein contact potential (local)
 ```
 
 重ね合わせて構造比較
@@ -277,7 +275,7 @@ fetch 4akeA
 align 4akeA, 1akeA
 ```
 
-結合ポケット
+結合ポケット(空洞、cavity)
 ```bash
 # 簡易的であるがPyMOLのcavityモードを使う
 # タミフルでの例
@@ -288,21 +286,126 @@ set surface_cavity_mode, 1
 set surface_color, gray
 ```
 
-#### シミュレーショントラジェクトリの読み込み
-シェルの起動コマンドラインの引数で指定してしまうのが便利です
+#### 課題1
+
+膜タンパク質の一つで分子を輸送するトランスポータというタンパク質の種類があります。PDB ID = 4dx5 は多剤排出トランスポータAcrBというタンパク質で、薬剤などを輸送します。
+
+- 4dx5は3つのChainから成っています。どれも似た構造なので、Chain Bだけを表示させてみましょう。
+
+- 4dx5を `fetch` してPyMOLで可視化させてみましょう。疎水性アミノ残基を色分けして表示させてみて、疎水アミノ残基がどの領域に集まっているか確認しましょう。
+
+- 4dx5には、薬剤である minocycline (PDBの中での残基名は `MIY`)が結合しています。それを `sphere` で表示させて確認してみましょう。minocyclineが結合している場所は確かにポケットがあるかPyMOLで確認してみましょう。
+
+- minocyclineの周りのアミノ酸残基は疎水性でしょうか？親水性でしょうか？
+
+
+#### PyMOL実践1: リガンドとタンパク質の相互作用の可視化
+
+Adenylate kinase (PDB ID 1ake や 4ake)の 1ake 構造は、リガンド(Ap5A、PDBの中での残基名は `AP5`)が結合しています。リガンドがどの原子との相互作用によって結合しているのか確認してみましょう。
+
 ```bash
-$ pymol -d "load resources/alanine-dipeptide-implicit.pdb, obj, 0, pdb; load_traj output.dcd, obj, 0, dcd"
+fetch 1akeA
+zoom
+hide everything
+select ligand, resn AP5
+as sticks, ligand
+as sticks, ligand around 5.0
+Objectメニュー -> ligand -> Action -> find -> polar contacts -> to other atom in object
+zoom ligand
 ```
-シミュレーション結果は分子の並進・回転が入っているで重ね合わせをして取り除きます
+
+更に、わかりやすいように周りの原子名を文字で表示(ラベル)させてみましょう
+```bash
+
+```
+
+#### PyMOL実践2: シミュレーショントラジェクトリの観察
+シミュレーションデータには、DCDやNetCDFというフォーマットがあります。
+これのフォーマットは主に原子のXYZ座標のみを保存するためのもので、
+原子名やアミノ酸残基名は含まれていません。
+したがって、PDBなどの原子名を含むファイルと一緒に読み込んでやる必要があります。
+
+トラジェクトデータは [ここ](https://suitc-my.sharepoint.com/:f:/r/personal/ymatsunaga_mail_saitama-u_ac_jp/Documents/lab/data/ak?csf=1&web=1&e=D7aLxp) からダウンロードしてください。このシミュレーションデータは、Adenylate kinase (PDB ID 1ake や 4ake)の1akeの構造から分子動力学シミュレーションを行って得られたものです。
+
+例えば、PDBとDCDファイルを読み込む場合、以下のようにします
+```bash
+# 最初にPDBファイルをオブジェクト名 obj として読み込む
+load ak.pdb, obj, 0, pdb 
+# load_trajというコマンドを用いて、DCDデータを obj へ追加する
+load_traj ak.dcd, obj, 0, dcd
+```
+
+ちょっとコマンドが長くなってしまうので、シェルの起動コマンドラインの引数 `-d` でPyMOLコマンドを起動時に実行してしまって、
+それをシェルのコマンド履歴に覚えさせてしまうのが便利です。
+```bash
+$ pymol -d "load ak.pdb, obj, 0, pdb; load_traj ak.dcd, obj, 0, dcd"
+```
+
+まず、水やイオンが大量に入っていることが確認できると思います。PyMOLの右下にある「再生」ボタンを押して動くを確認してください。PyMOLでは異なるフレームの構造を state として保存しています。
+
+水やイオンが確認できた後で、タンパク質構造に集中するために水とイオンを削除します。以下のコマンドを使います。
+```bash
+remove solvent or inorganic
+```
+
+タンパク質に結合しているリガンド(Ap5A)をstickで表示させます
+```bash
+show sticks, organic
+```
+
+シミュレーションデータの構造には水素原子が含まれているのが確認できます。水素原子は構造を見るのに邪魔(といってもプロトンが重要であることはよくありますが)なので、水素原子も消します
+```bash
+# h. は水素原子を選択するの略語
+remove h.
+```
+
+シミュレーション結果は分子の並進・回転が入っているで重ね合わせをして取り除きます。2つの異なるオブジェクト同士では `align` や `super` といったコマンドを用いましたが、同じオブジェクト内の異なるフレーム(state)の構造を重ね合わせるには `intra_fit` というコマンドを使います。
 ```bash
 # polymerでタンパク質だけを指定して重ね合わせ
 intra_fit polymer
 ```
 
+#### 課題2
+
+重ね合わせができたら、これまで実験構造を観察するために学んだ様々な表示を行ってみましょう。例えば、リガンド(Ap5A)と相互作用しているアミノ酸残基を stick表示するのは以下のコマンドです。
+
+```bash
+select ligand, resn AP5
+select active, byres all within 3.5 of ligand
+show sticks, active
+```
+
+- リガンド(Ap5A)と相互作用している原子を表示させて、それが時間(state)とともにどのように変化していくか観察してください。
+
+- リガンド(Ap5A)との相互作用の変化が、タンパク質全体の構造とどのように関連しているでしょうか？観察してみましょう。
+
+#### PyMOL実践3: フォールディングトラジェクトリの観察
+Villin headpiece (PDB ID 1yrf)のフォールディングシミュレーションデータを観察します。
+
+トラジェクトデータは [ここ](https://suitc-my.sharepoint.com/:f:/r/personal/ymatsunaga_mail_saitama-u_ac_jp/Documents/lab/data/1yrf?csf=1&web=1&e=PyMjTZ) からダウンロードしてください。これは分子動力学シミュレーションから得られたトラジェクト理で、フォールディングとアンフォールディングを何回か繰り返しています。
+
+以下のコマンドでデータを読み込みましょう。オブジェクト名で`1yrf`が天然構造、`md`がトラジェクトリとなります。
+```bash
+$ pymol -d "load 1yrf.pdb; load 1yrf.pdb, md, 0, pdb; load_traj 1yrf.dcd, md, 0, dcd"
+```
+
+天然構造へ重ね合わせをしましょう
+```bash
+align md, 1yrf
+```
+
+さらにトラジェクトリの異なる時間(フレーム, state)を重ね合わせます
+```bash
+intra_fit polymer
+```
+
+- TODO: 天然構造での相互作用の確認
+- TODO: トラジェクトりの観察
+- TODO: 動画の作り方
+
+
 #### 参考
 - [PyMOL Wiki](https://pymolwiki.org)
 - [阪大 蛋白研 鈴木守先生のページ](http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/install.php)
 - [東大 森脇さんのPyMOL tutorial](https://yoshitakamo.github.io/pymol-book/index.html)
-
-
 

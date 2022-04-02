@@ -13,6 +13,7 @@ menu:
 
 
 - [Setup](setup/)
+- [Basics](basics/)
 - [PyMOL](pymol/)
 - [GENESIS](genesis/)
 - [OpenMM](openmm/)

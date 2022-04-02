@@ -9,6 +9,8 @@ categories:
 
 ### PCクラスタ設定メモ
 
+---
+
 ### Slurm
 
 #### mungeのインストール
@@ -147,4 +149,15 @@ sudo systemctl start slurmd
 sudo systemctl status slurmd
 sudo systemctl enable slurmd
 ```
+
+---
+
+### NIS
+
+---
+
+### NFS
+
+---
+
 

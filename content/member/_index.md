@@ -31,7 +31,7 @@ menu:
 
 * B4 佐々木 健太郎 (Kentaro SASAKI)
 
-* B4 外立 悠貴 (Yuki Hashidate)
+* B4 外立 悠貴 (Yuki HASHIDATE)
 
 * B4 志賀 俊輔 (Shunsuke SHIGA)
 

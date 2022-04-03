@@ -42,9 +42,9 @@ crabに接続されているハードディスクはRAIDで冗長化されてお
 
 ```bash
 $ squeue 
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-               115       all   isrest nakayama  R 1-22:49:43      1 n3
-               125       all isrest_t     yasu  R 1-00:09:45      1 n2
+ JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+   115       all   isrest nakayama  R 1-22:49:43      1 n3
+   125       all isrest_t     yasu  R 1-00:09:45      1 n2
 ```
 
 ジョブの投入

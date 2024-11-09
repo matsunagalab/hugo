@@ -50,7 +50,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
 
 [Params.logo]
   #image = "img/placeholder.png" # Logo image. Path relative to "static"
-  image = "AdK.png" # Logo image. Path relative to "static"
+  #image = "AdK.png" # Logo image. Path relative to "static"
+  image = "mats04.png"
   title = "埼玉大学 松永研究室" # Logo title, otherwise will use site title
   subtitle = "Matsunaga Lab Saitama University" # Logo subtitle
 
@@ -117,7 +118,7 @@ summaryLength = 120 # サマリーの長さを120単語にする
   weight = 7
 
 [[Menus.main]]
-  Name = "研究室内部向け"
+  Name = "研究室向け"
   URL = "/lab/"
   weight = 8
 
@@ -129,18 +130,10 @@ summaryLength = 120 # サマリーの長さを120単語にする
 
 [[Params.widgets.social.custom]]
   title = "GitHub"
-  url = "https://github.com/orgs/matsunagalab/projects"
+  #url = "https://github.com/orgs/matsunagalab/projects"
+  #url = "https://tasks.office.com/ms.saitama-u.ac.jp/EN-US/Home/Planner#/plantaskboard?groupId=ecbe2b55-4132-4ffd-a770-3268872ae09f&planId=KmwSO3Gc-ESVDLSDx5AQg8gAF46o"
+  url = "https://github.com/matsunagalab"
   icon = "svg/github.svg"
-
-[[Params.widgets.social.custom]]
-  title = "Slack"
-  url = "https://matsunagalab777.slack.com"
-  icon = "svg/slack.svg"
-
-[[Params.widgets.social.custom]]
-  title = "OneDrive"
-  url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
-  icon = "svg/onedrive.svg"
 
 [[Params.widgets.social.custom]]
   title = "OverLeaf"
@@ -150,7 +143,20 @@ summaryLength = 120 # サマリーの長さを120単語にする
 [[Params.widgets.social.custom]]
   title = "Google Calendar"
   url = "https://calendar.google.com/calendar"
+  #title = "Outlook Calendar"
+  #url = "https://outlook.office365.com/calendar/group/mstm.saitama-u.ac.jp/GR_matsunagalab/view/month"
   icon = "svg/calendar.svg"
+
+[[Params.widgets.social.custom]]
+  #title = "Slack"
+  title = "SharePoint"
+  url = "https://suitc.sharepoint.com/sites/GR_matsunagalab"
+  icon = "svg/slack.svg"
+
+#[[Params.widgets.social.custom]]
+#  title = "OneDrive"
+#  url = "https://suitc-my.sharepoint.com/:f:/g/personal/ymatsunaga_mail_saitama-u_ac_jp/Ejkll3xv4iZBmiV49Ns13IIBc9Xoh_aFUODdlF_vIjCq9w"
+#  icon = "svg/onedrive.svg"
 
 #[[Params.widgets.social.custom]]
 #  title = "Mendeley"
@@ -168,17 +174,37 @@ summaryLength = 120 # サマリーの長さを120単語にする
   icon = "svg/youtube.svg"
 
 [[Params.widgets.social.custom]]
-  title = "Jupyter on crab"
-  url = "http://192.168.1.101:8888/"
+  title = "Jupyter on floyd (from outside)"
+  #url = "http://192.168.1.102:8000/"
+  url = "https://floyd.matsunagalab.org/"
   icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]
-  title = "Jupyter on m1"
-  url = "http://192.168.1.51:8000/"
+  title = "Jupyter on floyd (from inside)"
+  url = "http://192.168.1.102:8000/"
+  #url = "https://floyd.matsunagalab.org/"
   icon = "svg/jupyter.svg"
 
 [[Params.widgets.social.custom]]
-  title = "Cluster monitoring"
-  url = "http://192.168.1.101:3000/"
-  icon = "svg/author.svg"
+  title = "Jupyter on crab (from outside)"
+  #url = "http://192.168.1.101:8888/"
+  url = "https://crab.matsunagalab.org/"
+  icon = "svg/jupyter.svg"
+
+[[Params.widgets.social.custom]]
+  title = "Jupyter on m1 (from outside)"
+  #url = "http://192.168.1.51:8000/"
+  url = "https://m1.matsunagalab.org/"
+  icon = "svg/jupyter.svg"
+
+[[Params.widgets.social.custom]]
+  title = "Jupyter on m2 (from outside)"
+  #url = "http://192.168.1.52:8000/"
+  url = "https://m2.matsunagalab.org/"
+  icon = "svg/jupyter.svg"
+
+#[[Params.widgets.social.custom]]
+#  title = "Cluster monitoring"
+#  url = "http://192.168.1.101:3000/"
+#  icon = "svg/author.svg"
 

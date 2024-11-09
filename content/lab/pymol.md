@@ -28,14 +28,19 @@ categories:
 
 - オープンソース版と有料ライセンス(バイナリとプラスαの機能配布)がある
 
+#### Protein Data Bank (PDB)
+
+- https://www.rcsb.org
+- 構造データベース
+- ファイルフォーマットの説明
+
 #### インストール
 
 オープンソース版をインストールします。現状、MacOSにはHomebrew経由でいれるのがよいです。HomebrewはAnacondaと相性が悪いので、Anacondaはアンインストールするか、pyenvで環境をわけるのが推奨です。
 
 HomebrewでPyMOLをインストールするには @Ag_smithさん 謹製のHomebrewレシピを使わせてもらいます https://qiita.com/Ag_smith/items/58e917710c4eddab46ee
 ```bash
-$ brew tap brewsci/bio
-$ brew install pymol
+$ brew install brewsci/bio/pymol
 ```
 
 #### 基本操作
@@ -408,4 +413,5 @@ intra_fit polymer
 - [PyMOL Wiki](https://pymolwiki.org)
 - [阪大 蛋白研 鈴木守先生のページ](http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/install.php)
 - [東大 森脇さんのPyMOL tutorial](https://yoshitakamo.github.io/pymol-book/index.html)
+- [Molecular Memory: PyMOL Tutorials](https://www.youtube.com/watch?v=mBlMI82JRfI&list=PLUMhYZpMLtal_Z7to3by2ATHP-cI4ma5X)
 

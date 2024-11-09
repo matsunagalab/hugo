@@ -15,6 +15,7 @@ GENESISでは、プロセスを並列に複数走らせて、並列計算を行�
 
 ```bash
 $ brew install automake wget
+$ brew install gcc@11
 ```
 
 ```bash
@@ -35,18 +36,23 @@ $ sudo xcode-select --install
 コンパイルできたらインストールして環境変数PATHを設定します。
 ```bash
 $ sudo ln -sf /opt/openmpi-4.0.5 /opt/openmpi
+```
 
-$ cat <<'EOS' >>~/.zshrc
+vimで `~/.zshrc` の末尾に以下を追加
+```bash
 # openmpi
 export PATH=/opt/openmpi/bin:$PATH
 export LD_LIBRARY_PATH=/opt/openmpi/lib:$LD_LIBRARY_PATH
 export DYLD_LIBRARY_PATH=/opt/openmpi/lib:$DYLD_LIBRARY_PATH
 export MANPATH=/opt/openmpi/share/man:$MANPATH
-'EOS'
+```
 
+```bash
 $ source ~/.zshrc
+```
 
-# 無事にインストールされてPATHが通っているか確認
+無事にインストールされてPATHが通っているか確認
+```bash
 $ which mpirun
 ```
 
@@ -55,9 +61,9 @@ $ which mpirun
 MacOSでGENESISをコンパイルする手順は以下の通りです。
 
 ```bash
-$ wget --content-disposition "https://www.r-ccs.riken.jp/labs/cbrt/?smd_process_download=1&download_id=15613"
-$ tar jxvf genesis-1.6.0.tar.bz2
-$ cd genesis-1.6.0/
+$ wget --content-disposition "https://www.r-ccs.riken.jp/labs/cbrt/?smd_process_download=1&download_id=25561"
+$ tar jxvf genesis-2.0.0.tar.bz2
+$ cd genesis-2.0.0/
 $ ./configure
 $ make install
 ```
@@ -65,17 +71,22 @@ $ make install
 コンパイルできたらインストールして環境変数PATHを設定します。
 ```bash
 $ cd ..
-$ sudo mv genesis-1.6.0 /opt/
-$ sudo ln -sf /opt/genesis-1.6.0 /opt/genesis
+$ sudo mv genesis-2.0.0 /opt/
+$ sudo ln -sf /opt/genesis-2.0.0 /opt/genesis
+```
 
-
-$ cat << 'EOS' >>~/.zshrc
+vimで `~/.zshrc` の末尾に以下を追加
+```bash
 # genesis
 export PATH=/opt/genesis/bin:$PATH
-'EOS'
+```
 
+設定を反映
+```bash
 $ source ~/.zshrc
+```
 
-# 無事にインストールされてPATHが通っているか確認
+無事にインストールされてPATHが通っているか確認
+```bash
 $ which atdyn
 ```

@@ -9,49 +9,73 @@ menu:
   Members
 ---
 
-### メンバー
+### Current
 
 * 教員 [松永 康佑 (Yasuhiro MATSUNAGA)](/member/matsunaga/)
 
-* M2 東田 連 (Ren HIGASHIDA)
+* 特定研究員(特定助教) 唐澤 直之 (Naoyuki KARASAWA)
 
-* M2 山口 皓平 (Kohei YAMAGUCHI)
+* D 村上 泰平 (Taihei MURAKAMI)
 
-* M1 内野 遥斗 (Haruto UCHINO)
+* M2 柿沼 孝紀 (Koki KAKINUMA)
 
-* M1 大嶋 龍平 (Ryuhei OHSHIMA)
+* M2 外立 悠貴 (Yuki HASHIDATE)
 
-* M1 岡田 一真 (Kazuma OKADA)
+* M2 迫 陽平 (Yohei SAKO)
 
-* M1 小田 奏一郎 (Soichiro ODA)
+* M2 川合 毅 (Tsuyoshi KAWAI)
 
-* M1 松原 央昇 (Hironori MATSUBARA)
+* M1 佐々木 健太郎 (Kentaro SASAKI)
 
-* B4 柿沼 孝紀 (Koki KAKINUMA)
+* M1 大西 蓮 (Ren ONISHI)
 
-* B4 佐々木 健太郎 (Kentaro SASAKI)
+* M1 田實 元陽 (Motoharu TAJITSU)
 
-* B4 外立 悠貴 (Yuki HASHIDATE)
+* M1 田中 克明 (Katsuharu TANAKA)
 
-* B4 志賀 俊輔 (Shunsuke SHIGA)
+* M1 本間 さくら (Sakura HOMMA)
 
-* B4 出川 拓実 (Takumi DEGAWA)
+* M1 津田　優太 (Yuta TSUDA)
 
-* B4 迫 陽平 (Yohei SAKO)
+* B4 湯田 和輝 (Kazuki YUDA)
 
-### OB・OG
+* B4 須藤 颯斗 (Hayato SUTO)
 
-* 菱沼 達也 (Tatsuya HISHINUMA) 2019年度学士
+* B4 長濱 聖英 (Seiei NAGAHAMA)
 
-* 中山 浩彰 (Hiroaki NAKAYAMA) 2020年度修士
+### Alumni
 
-* 櫻井 快 (Kai SAKURAI) 2020年度学士
+* 青木 奨悟 (Shogo AOKI) 2023年度学士
 
-* 近藤 悠貴 (Haruki KONDO) 2020年度学士
+* 大嶋 龍平 (Ryuhei OHSHIMA) 2023年度修士
 
-* 上田 祐衣 (Yui UEDA) 2020年度学士
+* 岡田 一真 (Kazuma OKADA) 2023年度修士
+
+* 小田 奏一郎 (Soichiro ODA) 2023年度修士
+
+* 松原 央昇 (Hironori MATSUBARA) 2023年度修士
+
+* 志賀 俊輔 (Shunsuke SHIGA) 2022年度学士
+
+* 出川 拓実 (Takumi DEGAWA) 2022年度学士
+
+* 東田 連 (Ren HIGASHIDA) 2022年度修士
+
+* 山口 皓平 (Kohei YAMAGUCHI) 2022年度修士
+
+* 内野 遥斗 (Haruto UCHINO) 2021年度学士
+
+* 長沢 瀬奈 (Sena NAGASAWA) 2021年度学士
 
 * 大金 智則 (Tomonori OGANE) 2021年度修士
 
-* 長沢 瀬奈 (Sena NAGASAWA) 2021年度学士
+* 上田 祐衣 (Yui UEDA) 2020年度学士
+
+* 近藤 悠貴 (Haruki KONDO) 2020年度学士
+
+* 櫻井 快 (Kai SAKURAI) 2020年度学士
+
+* 中山 浩彰 (Hiroaki NAKAYAMA) 2020年度修士
+
+* 菱沼 達也 (Tatsuya HISHINUMA) 2019年度学士
 

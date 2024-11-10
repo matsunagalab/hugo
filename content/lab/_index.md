@@ -11,7 +11,7 @@ menu:
 
 ### 研究室向け
 
-## 学生の皆さんへ
+### 学生の皆さんへ
 
 以下では松永研究室のGitHub organizationのrepositoriesへのリンクや文書があります。
 研究に使う情報やコード・データを整理整頓して他のメンバーと共有し、研究を進めることが目的です。
@@ -26,7 +26,7 @@ menu:
 - `README.md` は作業ディレクトリ毎に作成します。そのディレクトリの案内役です。他のメンバーや2週間後の自分(2週間たてば現在の作業はすっかり忘れています！)のためを思って書きましょう。そのディレクトリですぐに作業できる情報を書くことを心がけましょう。
 - ファイル名を周りのファイルの慣習にあわせましょう。そのほうが他人がみて意図がわかりやすくなります。
 
-## 研究
+### 研究用リポジトリ
 
 - [notebooks (private)](https://github.com/matsunagalab/notebooks) 思いついたことを試しているJupyter notebooks
 - [MDToolbox.jl](https://github.com/matsunagalab/MDToolbox.jl) 開発しているJuliaパッケージ
@@ -42,7 +42,7 @@ menu:
 - [pngase (private)](https://github.com/matsunagalab/pngase) PNGase
 - [test](https://github.com/matsunagalab/test) 🔰初めての人が触ってみるテストリポジトリ
 
-## ラボ内向け文書・チュートリアル
+### ラボ内向け文書・リポジトリ
 
 - 研究室関連
   - [研究室ガイダンス](https://www.bio.ics.saitama-u.ac.jp/howto/ガイダンス.html)
@@ -73,7 +73,7 @@ menu:
   - GPTs [発表スライドから質問するbot](https://chatgpt.com/g/g-ajvKmcCyp-fa-biao-suraitokarazhi-wen-surubot)
   - GPTs [画像からmatplotlibコード](https://chatgpt.com/g/g-Qnv6cvunS-hua-xiang-karamatplotlibkoto)
 
-## 教育向けリポジトリ
+### 教育用リポジトリ
 
 - [tutorial_hmm](https://github.com/matsunagalab/tutorial_hmm) 隠れマルコフモデルのチュートリアル
 - [lecture_ML](https://github.com/matsunagalab/lecture_ML) 講義「機械学習」の Colab notebooks
@@ -81,7 +81,7 @@ menu:
 - [lecture_OR](https://github.com/matsunagalab/lecture_OR) 講義「オペレーションズリサーチ」の Colab notebooks
 - [lecture_ode](https://github.com/matsunagalab/lecture_ode) 微分方程式関連の講義の notebooks (Juliaで書いてある)
 
-## Repositories for published papers
+### Repositories for published papers
 
 - [protein G](https://github.com/matsunagalab/proteing) Correcting folding pathway of Protein G by integrative modeling with Markov state model
 - [myosin V](https://github.com/matsunagalab/myosinV) Hidden Markov Modeling of Myosin V Walking on Actin Filament using High-Speed Atomic Force Microscopy Data

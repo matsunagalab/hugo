@@ -12,21 +12,21 @@ draft: false
 
 ## News
 
-- [論文] 2024年11月5日 Communications Biologyに東京大学の舘先生、豊岡さん、西本さん、天童さん、北海道大学の堀山先生とのウイルス外殻構造のタイリングに関する論文 "Explicit description of viral capsid subunit shapes by unfolding dihedrons" がアクセプトされました。ウイルス外殻構造は正二十面体をとり、その部品は同じ形の蛋白質が集まってできていますが、その形を満たすタイル形状については理解が不十分でした。今回、タイリングの専門家である舘先生グループと堀山先生との共同研究により、外殻のタイル形状を陽に記述し、実際のウイルス外殻構造を分類することができました。異分野融合研究であり、概念や用語、問いを共有するのに時間がかかりましたが、最終的に良い成果が得られてよかったです。[https://biorxiv.org/cgi/content/short/2024.07.29.605617v1](https://biorxiv.org/cgi/content/short/2024.07.29.605617v1)
+- [論文] 2024年11月5日 Commun. Biol. に東京大学の舘先生、豊岡さん、西本さん、天童さん、北海道大学の堀山先生とのウイルス外殻構造のタイリングに関する論文 "[Explicit description of viral capsid subunit shapes by unfolding dihedrons](https://doi.org/10.1038/s42003-024-07218-x)" が出版されました。ウイルス外殻構造は同じ形のタンパク質が集まって正二十面体を形成していますが、取り得るタイル形状については理解が不十分でした。今回、タイリングの専門家である舘グループと堀山先生との共同研究により、外殻のタイル形状を陽に記述する枠組みを開発し、実際のウイルス外殻構造へ適用して分類することができました
 
 - [イベント] 2024年10月19日 卒研生の湯田さん、須藤さん、長濱さんが卒業論文中間発表会で発表しました
 
-- [イベント] 2024年9月20日 修士2年生の外立さん、迫さん、柿沼さん、川合さんが修士論文の中間審査会で発表しました
+- [イベント] 2024年9月20日 修士2年生の外立さん、迫さん、柿沼さん、川合さんが修士論文中間審査会で発表しました
 
-- [学会発表] 2024年9月16日〜19日に札幌で開催された[日本物理学会第79回年次大会](https://www.jps.or.jp/activities/meetings/annual/annual-index.php)で修士2年生の外立さんが口頭発表「タンパク質言語モデルを用いた抗体物性予測モデルの開発」(9月17日発表)、迫さんが口頭発表「微分可能アプローチによる分子シミュレーションモデルの力場パラメータ最適化」(9月17日発表)、川合さんが口頭発表「SE(3) equivariantフローモデルを用いたタンパク質の自由エネルギー計算」(9月17日発表)、柿沼さんが口頭発表「微分可能な剛体ドッキングシミュレーションによるパラメータ最適化」(9月18日発表)を行いました
+- [学会発表] 2024年9月16日〜19日に北海道大学で開催された[日本物理学会第79回年次大会](https://www.jps.or.jp/activities/meetings/annual/annual-index.php)で修士2年生の外立さんが口頭発表「タンパク質言語モデルを用いた抗体物性予測モデルの開発」(9月17日発表)、迫さんが口頭発表「微分可能アプローチによる分子シミュレーションモデルの力場パラメータ最適化」(9月17日発表)、川合さんが口頭発表「SE(3) equivariantフローモデルを用いたタンパク質の自由エネルギー計算」(9月17日発表)、柿沼さんが口頭発表「微分可能な剛体ドッキングシミュレーションによるパラメータ最適化」(9月18日発表)を行いました
 
-- [イベント] 2024年8月26日〜30日 卒研生の長濱さんが神戸大学で行われた[KOBE HPC サマースクール(初級) 2024](http://www.eccse.kobe-u.ac.jp/simulation_school/kobe-hpc-summer-basic-2024/)へ参加して、修了証をもらいました
+- [イベント] 2024年8月26日〜30日 卒研生の長濱さんが神戸大学で行われた[KOBE HPC サマースクール(初級) 2024](http://www.eccse.kobe-u.ac.jp/simulation_school/kobe-hpc-summer-basic-2024/)へ参加して、修了証をいただきました。旅費のサポートをいただきありがとうございました
 
-- [イベント] 2024年8月26日〜29日 M2の川合さんとM1の本間さんが定山渓温泉で行われた[第64回生物物理若手の会夏の学校2024](https://bpwakate.net/summer2024/)へ参加しました
+- [イベント] 2024年8月26日〜29日 修士2年生の川合さんと修士1年生の本間さんが定山渓温泉で開催された[第64回生物物理若手の会夏の学校2024](https://bpwakate.net/summer2024/)へ参加しました。一部の学生へ旅費のサポートをいただきありがとうございました
 
 - [会議開催と招待講演] 2024年6月30日〜7月2日に理化学研究所神戸キャンパスIIB棟(融合連携イノベーション推進棟)で[IUPAB2024 Hands-on Training Program CHARMM-GUI/GENESIS MD Tutorial](https://cbp.riken.jp/meeting/workshop/iupab2024-genesis-workshop/) (Organizers: 理研・杉田さん、Lehigh Univ. Wonpilさん、大阪公立大・森次さん、松永)を開催しました。「富岳」成果創出加速プログラムの標準課題「生体分子シミュレータを基にした大規模推論システムの開発と応用」の共催となります。多くの皆様にご参加いただきありがとうございました。また、松永がタイトル"Integrative Modeling of Protein Dynamics from High-speed Atomic Force Microscopy and Molecular Dynamics Simulations"で講演しました(7月2日発表)
 
-- [学会発表] 2024年6月24日〜28日に京都国際会館で開催された[IUPAB2024](https://www.c-linkage.co.jp/iupab2024-bsj-kyoto/)で修士2年生の外立さんがポスター発表 "Development of VHH antibody property prediction model based on Protein Language Models"(6月26日発表)、川合さんがポスター発表 "Optimal transport maps for targeted free energy estimation"(6月27日発表)、迫さんがポスター発表 "Learning force field parameters from ensemble-averaged data with a differentiable approach"(6月28日発表)、修士1年生の本間さんがポスター発表 "Flexible Fitting of Coarse-Grained Models to AFM Images of Intrinsically Disordered Proteins"(6月28日発表) を行いました
+- [学会発表] 2024年6月24日〜28日に京都国際会館で開催された[IUPAB2024](https://www.c-linkage.co.jp/iupab2024-bsj-kyoto/)で修士2年生の外立さんがポスター発表 "Development of VHH antibody property prediction model based on Protein Language Models"(6月26日発表)、川合さんがポスター発表 "Optimal transport maps for targeted free energy estimation"(6月27日発表)、迫さんがポスター発表 "Learning force field parameters from ensemble-averaged data with a differentiable approach"(6月28日発表)、修士1年生の本間さんがポスター発表 "Flexible Fitting of Coarse-Grained Models to AFM Images of Intrinsically Disordered Proteins"(6月28日発表) を行いました。一部の学生へ参加費免除をいただきありがとうございました
 
 - [論文] 2024年6月14日 J. Phys. Chem. B に理研のJungさん、八木さん、Tanさん、杉田チームリーダらとの分子動力学シミュレーションソフトGENESIS version 2.1に関する論文 "[GENESIS 2.1: High-Performance Molecular Dynamics Software for Enhanced Sampling and Free-Energy Calculations for Atomistic, Coarse-Grained, and Quantum Mechanics/Molecular Mechanics Models](https://doi.org/10.1021/acs.jpcb.4c02096)" が出版されました。Version 2.1になりQMを含めてできることがとても拡がっています。松永は自由エネルギー解析(Postprocessing of Free-Energy Analysis)の節を担当しました
 

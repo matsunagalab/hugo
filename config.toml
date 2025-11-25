@@ -1,7 +1,7 @@
 baseurl = "https://www.bio.ics.saitama-u.ac.jp"
 title = "埼玉大学 松永研究室"
 languageCode = "ja-jp"
-paginate = "1" # Number of posts per page
+#paginate = "1" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
@@ -9,13 +9,16 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 hasCJKLanguage = true # 日本語・中国語・韓国語の単語カウントを有効にする
 summaryLength = 120 # サマリーの長さを120単語にする
 
-#[pagination]
-#  pagerSize = 1   # ←整数で書く
+[pagination]
+  pagerSize = 1   # ←整数で書く
 
-[Author] # Used in authorbox
-  name = "Yasuhiro Matsunaga"
-  bio = ""
-  avatar = "img/avatar.png"
+#[Author] # Used in authorbox
+#  name = "Yasuhiro Matsunaga"
+#  bio = ""
+#  avatar = "img/avatar.png"
+
+[Params.Author] # Used in authorbox
+  name = "Matsunaga Lab"
 
 [Params]
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle

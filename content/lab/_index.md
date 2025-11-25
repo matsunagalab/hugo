@@ -42,35 +42,35 @@ menu:
 - [pngase (private)](https://github.com/matsunagalab/pngase) PNGase
 - [test](https://github.com/matsunagalab/test) 🔰初めての人が触ってみるテストリポジトリ
 
-#### ラボ内向け文書・リポジトリ
+#### 研究室生活
+- [研究室ガイダンス](https://www.bio.ics.saitama-u.ac.jp/howto/ガイダンス.html)
+- [論文紹介の仕方](https://www.bio.ics.saitama-u.ac.jp/howto/論文紹介の仕方.html)
+- [進捗報告、論文紹介、研究発表に使うスライドのテンプレート](https://github.com/matsunagalab/slide)
+- [(作成中)研究のワークフロー](https://www.bio.ics.saitama-u.ac.jp/howto/研究のワークフロー.html)
 
-- 研究室関連
-  - [研究室ガイダンス](https://www.bio.ics.saitama-u.ac.jp/howto/ガイダンス.html)
-  - [論文紹介の仕方](https://www.bio.ics.saitama-u.ac.jp/howto/論文紹介の仕方.html)
-  - [(作成中)研究のワークフロー](https://www.bio.ics.saitama-u.ac.jp/howto/研究のワークフロー.html)
-  - [修論・卒論の書き方](https://www.bio.ics.saitama-u.ac.jp/howto/修論・卒論の書き方.html)
-  - [進捗報告、論文紹介、研究発表に使うスライドのテンプレート](https://github.com/matsunagalab/slide)
-  - [卒論・修論関連ファイル(private)](https://github.com/matsunagalab/thesis)
-  - [学会発表関連ファイル(private)](https://github.com/matsunagalab/conference)
+#### 修論・卒論・学会
 
-- コンピュータ・研究関連
-  - [Macのセットアップ](https://www.bio.ics.saitama-u.ac.jp/howto/Macのセットアップ.html)
-  - [Macの使い方](https://www.bio.ics.saitama-u.ac.jp/howto/Macの使い方.html)
-  - [研究室サーバの使い方](https://www.bio.ics.saitama-u.ac.jp/howto/研究室サーバの使い方.html)
-  - [研究室サーバの管理](https://www.bio.ics.saitama-u.ac.jp/howto/研究室サーバの管理.html)
-  - [PyMOLチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/pymol.html)
-  - [VMDチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/vmd.html)
-  - [Blenderチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/blender.html)
-  - [MDシミュレーションのtips](https://www.bio.ics.saitama-u.ac.jp/howto/MDシミュレーションのtips.html)
-  - [MDデータ解析のチュートリアル](https://github.com/matsunagalab/tutorial_analyzingMDdata)
- 
-- ツール
-  - [発表スライドチェックリスト](https://forms.office.com/Pages/ResponsePage.aspx?id=aa8jBSUEjUqYJ-5yksXYIVUrvuwyQf1Pp3AyaIcq4J9UMkkyUUk0MkZVRERSRThQVUpRV1BPM0VJMSQlQCN0PWcu)
-  - [発表スライドをチェックするbot](https://chatgpt.com/g/g-anaTsfi19-fa-biao-suraitowotietukusurubot)
-  - [発表スライドから質問するbot](https://chatgpt.com/g/g-ajvKmcCyp-fa-biao-suraitokarazhi-wen-surubot)
-  - [修論・卒論チェックリスト](https://forms.office.com/Pages/ResponsePage.aspx?id=aa8jBSUEjUqYJ-5yksXYIVUrvuwyQf1Pp3AyaIcq4J9UNkU4T1RNQlFYTERMVTMyOFNVSDRRQTZXQiQlQCN0PWcu)
-  - [修論・卒論をチェックするbot](https://chatgpt.com/g/g-o6tmVEUZK-xiu-lun-zu-lun-wotietukusurubot)
-  - [画像からmatplotlibコード](https://chatgpt.com/g/g-Qnv6cvunS-hua-xiang-karamatplotlibkoto)
+- [修論・卒論の書き方](https://www.bio.ics.saitama-u.ac.jp/howto/修論・卒論の書き方.html)
+- [これまでの卒論・修論 (private)](https://github.com/matsunagalab/thesis)
+- [修論・卒論チェックリスト](https://forms.office.com/Pages/ResponsePage.aspx?id=aa8jBSUEjUqYJ-5yksXYIVUrvuwyQf1Pp3AyaIcq4J9UNkU4T1RNQlFYTERMVTMyOFNVSDRRQTZXQiQlQCN0PWcu)
+- [修論・卒論をチェックするbot](https://chatgpt.com/g/g-o6tmVEUZK-xiu-lun-zu-lun-wotietukusurubot)
+- [発表スライドチェックリスト](https://forms.office.com/Pages/ResponsePage.aspx?id=aa8jBSUEjUqYJ-5yksXYIVUrvuwyQf1Pp3AyaIcq4J9UMkkyUUk0MkZVRERSRThQVUpRV1BPM0VJMSQlQCN0PWcu)
+- [発表スライドをチェックするbot](https://chatgpt.com/g/g-anaTsfi19-fa-biao-suraitowotietukusurubot)
+- [発表スライドから質問するbot](https://chatgpt.com/g/g-ajvKmcCyp-fa-biao-suraitokarazhi-wen-surubot)
+- [これまでの学会発表ファイル (private)](https://github.com/matsunagalab/conference)
+
+#### コンピュータ
+
+- [Macのセットアップ](https://www.bio.ics.saitama-u.ac.jp/howto/Macのセットアップ.html)
+- [Macの使い方](https://www.bio.ics.saitama-u.ac.jp/howto/Macの使い方.html)
+- [研究室サーバの使い方](https://www.bio.ics.saitama-u.ac.jp/howto/研究室サーバの使い方.html)
+- [研究室サーバの管理](https://www.bio.ics.saitama-u.ac.jp/howto/研究室サーバの管理.html)
+- [PyMOLチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/pymol.html)
+- [VMDチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/vmd.html)
+- [Blenderチュートリアル](https://www.bio.ics.saitama-u.ac.jp/tutorial_viz/blender.html)
+- [MDシミュレーションのtips](https://www.bio.ics.saitama-u.ac.jp/howto/MDシミュレーションのtips.html)
+- [MDデータ解析のチュートリアル](https://github.com/matsunagalab/tutorial_analyzingMDdata)
+- [画像からmatplotlibコード](https://chatgpt.com/g/g-Qnv6cvunS-hua-xiang-karamatplotlibkoto)
 
 #### 教育用リポジトリ
 

@@ -14,6 +14,8 @@ draft: false
 
 ## News
 
+- [Preprint] T. Kawai, and Y. Matsunaga "[AFM-Fold: Rapid Reconstruction of Protein Conformations from AFM Images](https://www.biorxiv.org/content/10.1101/2025.11.17.688836v1)"
+
 - [招待講演] 2025年1月9日に北海道大学エイレイソウで開催された日本顕微鏡学会 [走査型プローブ顕微鏡分科会 2024年度研究会](https://microscopy.or.jp/jsm2022/wp-content/uploads/2024/10/b15a333eada44726925860197606e317.pdf)で松永がタイトル「AFMデータからの探針形状推定と生体分子動態モデリングへの応用」(1月9日発表)で講演しました
 
 - [イベント] 2024年11月27日 修士1年生の佐々木さん、大西さん、田實さん、田中さん、本間さん、津田さんが修士論文の中間発表会で発表しました

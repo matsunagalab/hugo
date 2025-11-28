@@ -17,33 +17,41 @@ menu:
 
 * D 村上 泰平 (Taihei MURAKAMI)
 
-* M2 柿沼 孝紀 (Koki KAKINUMA)
+* D 川合 毅 (Tsuyoshi KAWAI)
 
-* M2 外立 悠貴 (Yuki HASHIDATE)
+* M2 佐々木 健太郎 (Kentaro SASAKI)
 
-* M2 迫 陽平 (Yohei SAKO)
+* M2 大西 蓮 (Ren ONISHI)
 
-* M2 川合 毅 (Tsuyoshi KAWAI)
+* M2 田實 元陽 (Motoharu TAJITSU)
 
-* M1 佐々木 健太郎 (Kentaro SASAKI)
+* M2 田中 克明 (Katsuharu TANAKA)
 
-* M1 大西 蓮 (Ren ONISHI)
+* M2 本間 さくら (Sakura HOMMA)
 
-* M1 田實 元陽 (Motoharu TAJITSU)
+* M2 津田 優太 (Yuta TSUDA)
 
-* M1 田中 克明 (Katsuharu TANAKA)
+* M1 湯田 和輝 (Kazuki YUDA)
 
-* M1 本間 さくら (Sakura HOMMA)
+* M1 須藤 颯斗 (Hayato SUTO)
 
-* M1 津田　優太 (Yuta TSUDA)
+* B4 山合 吏 (Tsukasa YAMAAI)
 
-* B4 湯田 和輝 (Kazuki YUDA)
+* B4 榎本 朱莉 (Akari ENOMOTO)
 
-* B4 須藤 颯斗 (Hayato SUTO)
+* B4 小林 遥河 (Haruga KOBAYASHI)
 
-* B4 長濱 聖英 (Seiei NAGAHAMA)
+* B4 本間 雄大 (Yudai HOMMA)
 
 ### Alumni
+
+* 長濱 聖英 (Seiei NAGAHAMA) 2024年度学士
+
+* 柿沼 孝紀 (Koki KAKINUMA) 2024年度修士
+
+* 外立 悠貴 (Yuki HASHIDATE) 2024年度修士
+
+* 迫 陽平 (Yohei SAKO) 2024年度修士
 
 * 青木 奨悟 (Shogo AOKI) 2023年度学士
 
@@ -78,4 +86,3 @@ menu:
 * 中山 浩彰 (Hiroaki NAKAYAMA) 2020年度修士
 
 * 菱沼 達也 (Tatsuya HISHINUMA) 2019年度学士
-

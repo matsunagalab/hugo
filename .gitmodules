@@ -2,3 +2,6 @@
 	path = public
 	url = https://github.com/matsunagalab/matsunagalab.github.io
 	branch = master
+[submodule "themes/mainroad"]
+	path = themes/mainroad
+	url = https://github.com/vimux/mainroad

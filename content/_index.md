@@ -248,7 +248,7 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 
 - [Invited Talk] September 14-16, 2020: Matsunaga gave a talk titled "Modeling Protein Dynamics by Integrating Measurement and Simulation" at the symposium "Protein Structure-Function Correlation and Drug Development Opened by In Vivo Measurement Technology" (organizers: Prof. Takeuchi of AIST, Prof. Saio of Tokushima Univ.) at [The 93rd Annual Meeting of the Japanese Biochemical Society](https://www2.aeplan.co.jp/jbs2020/) held online<br>[招待講演] 2020年9月14日〜16日にオンライン開催された[第93回日本生化学会大会](https://www2.aeplan.co.jp/jbs2020/)におけるシンポジウム「生体内計測技術が拓くタンパク質構造・機能相関と創薬展開」(オーガナイザー：産総研・竹内先生、徳島大・齋尾先生)で松永がタイトル「計測とシミュレーションを統合したタンパク質ダイナミクスのモデリング」で講演しました
 
-- [Event] September 2, 2020: We wrote the Saitama Shimbun Sci-Tech Column ["Microscope by Computation"](http://www.saitama-u.ac.jp/rikogaku/cms/wp-content/uploads/saiteku-457.pdf)<br>[イベント] 2020年9月2日 埼玉新聞のサイ・テクこらむ[「計算による顕微鏡」](http://www.saitama-u.ac.jp/rikogaku/cms/wp-content/uploads/saiteku-457.pdf)を執筆しました
+- [Event] September 2, 2020: We wrote the Saitama Shimbun Sci-Tech Column ["Microscope by Computation"](https://www.saitama-u.ac.jp/rikogaku/wp-content/uploads/saiteku-457.pdf)<br>[イベント] 2020年9月2日 埼玉新聞のサイ・テクこらむ[「計算による顕微鏡」](https://www.saitama-u.ac.jp/rikogaku/wp-content/uploads/saiteku-457.pdf)を執筆しました
 
 - [Grant] August 3, 2020: KAKENHI Challenging Research (Exploratory) "Bottom-up Design of Virus Capsids by Tiling" (PI: Matsunaga, Co-I: Prof. Horiyama of Hokkaido Univ., Prof. Tachi of UTokyo) was awarded. We will work on elucidating the design principles of virus capsids through computation<br>[研究助成] 2020年8月3日 科研費の挑戦的研究(萌芽)「タイリングによるウイルス外殻のボトムアップ設計」(代表: 松永、分担: 北海道大学 堀山先生、東京大学 舘先生)が採択されました。計算によるウイルス外殻の設計原理の解明に取り組みます
 

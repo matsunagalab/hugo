@@ -1,0 +1,21 @@
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+
+# Backup files
+*.bak
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# Playwright
+.playwright-mcp/
+
+# OS
+.DS_Store

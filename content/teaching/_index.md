@@ -204,13 +204,3 @@ layout: "simple"
 - 理工学研究科博士前期課程
     - 生命情報工学特論 (月5限)
 
----
-
-### 講義関連リンク
-
-- [埼玉大学電子シラバス](http://syllabus.saitama-u.ac.jp/portal/public/syllabus/)
-- [埼玉大学教務システム](https://risyu.saitama-u.ac.jp/portal/Login.aspx)
-- [WebClass](https://webclass.gks.saitama-u.ac.jp/webclass/tool/saitama/teacher_login.php)
-- [埼玉大学の教室配置図(学内限定)](http://park.saitama-u.ac.jp/~zengaku/-te/8t-data/012.pdf)
-- [学年暦](http://park.saitama-u.ac.jp/~zengaku/gakunenreki.pdf)
-

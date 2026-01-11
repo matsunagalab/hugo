@@ -7,6 +7,7 @@ showHero: true
 heroStyle: "background"
 categories:
   - "Research"
+layout: "simple"
 ---
 
 ### Research Overview / 研究の概要

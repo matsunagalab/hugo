@@ -7,6 +7,7 @@ showHero: true
 heroStyle: "background"
 categories:
   - "Resource"
+layout: "simple"
 ---
 
 ### Computers

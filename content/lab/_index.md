@@ -7,6 +7,7 @@ showHero: true
 heroStyle: "background"
 categories:
   - "Lab"
+layout: "simple"
 ---
 
 ### 研究室内向けの教育的資料(公開できるものだけ公開しています)

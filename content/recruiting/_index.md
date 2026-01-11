@@ -7,6 +7,7 @@ showHero: true
 heroStyle: "background"
 categories:
   - "Recruiting"
+layout: "simple"
 ---
 
 ### 研究室配属でどこにしようか検討している学部生向けのFAQ

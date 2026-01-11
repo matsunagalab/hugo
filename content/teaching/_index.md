@@ -7,6 +7,7 @@ showHero: true
 heroStyle: "background"
 categories:
   - "Teaching"
+layout: "simple"
 ---
 
 ### 担当講義

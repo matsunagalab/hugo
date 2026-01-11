@@ -46,7 +46,7 @@
 
 [[main]]
   name = "X"
-  url = "#"
+  url = "https://x.com/ymatsunagalab"
   weight = 11
   [main.params]
     icon = "x-twitter"

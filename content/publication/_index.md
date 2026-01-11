@@ -1,12 +1,12 @@
 ---
+title: "Publications"
 draft: false
 date: 2020-09-20T21:00:54+09:00
-description: Publications
-sidebar: right
+description: "Papers, preprints, and presentations"
+showHero: true
+heroStyle: "background"
 categories:
   - "Publication"
-menu:
-  Publications
 ---
 
 ### Papers

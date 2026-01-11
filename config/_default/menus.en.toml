@@ -1,0 +1,53 @@
+[[main]]
+  name = "Research"
+  pageRef = "research"
+  weight = 2
+
+[[main]]
+  name = "Publications"
+  pageRef = "publication"
+  weight = 3
+
+[[main]]
+  name = "Members"
+  pageRef = "member"
+  weight = 5
+
+[[main]]
+  name = "Teaching"
+  pageRef = "teaching"
+  weight = 6
+
+[[main]]
+  name = "Recruiting"
+  pageRef = "recruiting"
+  weight = 7
+
+[[main]]
+  name = "Lab"
+  pageRef = "lab"
+  weight = 8
+
+[[main]]
+  name = "GitHub"
+  url = "https://github.com/matsunagalab"
+  weight = 9
+  [main.params]
+    icon = "github"
+    showName = false
+
+[[main]]
+  name = "YouTube"
+  url = "https://www.youtube.com/channel/UCO3SW9xZ5DoPOcvdPX7DaFg/videos"
+  weight = 10
+  [main.params]
+    icon = "youtube"
+    showName = false
+
+[[main]]
+  name = "X"
+  url = "#"
+  weight = 11
+  [main.params]
+    icon = "x-twitter"
+    showName = false

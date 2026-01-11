@@ -1,0 +1,41 @@
+# -- Main Menu --
+
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+
+[[main]]
+  name = "Research"
+  pageRef = "research"
+  weight = 2
+
+[[main]]
+  name = "Resources"
+  pageRef = "resource"
+  weight = 3
+
+[[main]]
+  name = "Publications"
+  pageRef = "publication"
+  weight = 4
+
+[[main]]
+  name = "Members"
+  pageRef = "member"
+  weight = 5
+
+[[main]]
+  name = "Teaching"
+  pageRef = "teaching"
+  weight = 6
+
+[[main]]
+  name = "Recruiting"
+  pageRef = "recruiting"
+  weight = 7
+
+[[main]]
+  name = "Lab"
+  pageRef = "lab"
+  weight = 8

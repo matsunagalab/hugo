@@ -1,0 +1,22 @@
+# Site Configuration
+theme = "congo"
+baseURL = "https://www.bio.ics.saitama-u.ac.jp/"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 2
+  [markup.highlight]
+    noClasses = false

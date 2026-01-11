@@ -1,0 +1,43 @@
+# Theme Options
+colorScheme = "ocean"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = false
+enableCodeCopy = true
+enableImageLazyLoading = true
+
+[header]
+  layout = "basic"
+  logo = "img/mats04.png"
+  showTitle = false
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = false
+
+[article]
+  showDate = true
+  showAuthor = false
+  showBreadcrumbs = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = false
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showTableOfContents = false
+  groupByYear = true
+
+[taxonomy]
+  showTermCount = true

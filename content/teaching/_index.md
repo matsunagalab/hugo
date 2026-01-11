@@ -1,12 +1,12 @@
 ---
+title: "Teaching"
 draft: false
 date: 2020-09-20T18:39:20+09:00
-description: Research
-sidebar: right
+description: "Courses and educational materials"
+showHero: true
+heroStyle: "background"
 categories:
   - "Teaching"
-menu:
-  Teaching
 ---
 
 ### 担当講義

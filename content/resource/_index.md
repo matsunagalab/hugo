@@ -1,12 +1,12 @@
 ---
+title: "Resources"
 draft: false
 date: 2020-09-20T21:10:35+09:00
-description: Resources
-sidebar: right
+description: "Computational resources and software"
+showHero: true
+heroStyle: "background"
 categories:
   - "Resource"
-menu:
-  Resource
 ---
 
 ### Computers

@@ -1,0 +1,84 @@
+/* Custom styles for Matsunaga Lab - Congo theme */
+
+/* Base text styling */
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Paragraph spacing */
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+/* Link styling */
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-color: #93c5fd;
+}
+
+.prose a:hover {
+  color: #1d4ed8;
+  text-decoration-color: #2563eb;
+}
+
+/* H2 header styling - like Mainroad */
+.prose h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-left: 4px solid #e53935;
+  padding-left: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+/* H3 subheadings */
+.prose h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* List items with square bullets */
+.prose ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.prose ul li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  line-height: 1.75;
+}
+
+.prose ul li::marker {
+  color: #333;
+}
+
+/* Header with background image */
+header {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(240, 249, 255, 0.8)), url('/img/protein-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 1rem 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive header menu - allow wrapping to 2 lines */
+@media (max-width: 1024px) {
+  header nav > ul {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    row-gap: 0.25rem !important;
+  }
+}

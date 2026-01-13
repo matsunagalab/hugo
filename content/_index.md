@@ -8,7 +8,7 @@ draft: false
 **Computational Biophysics @ Saitama University**
 {{< /lead >}}
 
-We conduct molecular simulation research, data analysis, and software development using computers, with the aim of understanding and controlling biological phenomena (i.e., molecular function modification and drug discovery) through the power of computation.<br>私たちは計算の力で生命現象を理解し制御する(=分子の機能改変や創薬)ことを目的として、コンピュータを用いた分子シミュレーション研究やデータ解析・ソフトウェア開発を行っています。
+We conduct molecular simulation research, data analysis, and software development, with the aim of understanding and controlling biological phenomena (i.e., molecular function modification and drug discovery) through the power of computation.<br>私たちは計算の力で生命現象を理解し制御する(=分子の機能改変や創薬)ことを目的として、コンピュータを用いた分子シミュレーション研究やデータ解析・ソフトウェア開発を行っています。
 
 For detailed research content, please see [here](research/).<br>詳しい研究内容は[こちら](research/)
 

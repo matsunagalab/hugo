@@ -12,6 +12,10 @@ layout: "simple"
 
 ### Papers
 
+* T. Kawai, and Y. Matsunaga* "AFM-Fold: Rapid reconstruction of protein conformations from AFM images" Biophysical Journal 125, 3845-3861 (2026) [DOI:10.1016/j.bpj.2026.06.022](https://doi.org/10.1016/j.bpj.2026.06.022)
+
+* 松永康佑*、大金智則、渕上壮太郎、高田彰二 "エンドツーエンド微分可能探針形状推定法によるAFM画像の鮮明化" 生物物理 65巻6号, 328-332 (2025) [DOI:10.2142/biophys.65.328](https://doi.org/10.2142/biophys.65.328)
+
 * R. Toyooka, S. Nishimoto, T. Tendo, T. Horiyama*, T. Tachi*, and Y. Matsunaga*, “Explicit description of viral capsid subunit shapes by unfolding dihedrons” Communications Biology 7, 1509 (9 pages) (2024) [DOI:10.1038/s42003-024-07218-x](https://doi.org/10.1038/s42003-024-07218-x)
 
 * J. Jung, K. Yagi, C. Tan, H. Oshima, T. Mori, I. Yu, Y. Matsunaga, C. Kobayashi, S. Ito, D. Ugarte La Torre, and Y. Sugita* "GENESIS 2.1: High-Performance Molecular Dynamics Software for Enhanced Sampling and Free-Energy Calculations for Atomistic, Coarse-Grained, and Quantum Mechanics/Molecular Mechanics Models" Journal of Physical Chemistry B 128, 6028-6048 (2024) [DOI:10.1021/acs.jpcb.4c02096](https://doi.org/10.1021/acs.jpcb.4c02096)

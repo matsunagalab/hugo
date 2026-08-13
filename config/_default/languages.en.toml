@@ -9,6 +9,7 @@ copyright = "Yasuhiro Matsunaga"
   dateFormat = "Jan 2, 2006"
   mainSections = ["post"]
   description = "Computational Biophysics @ Saitama University"
+  logo = "img/mats04.png"
 
 [params.author]
   name = "Matsunaga Lab"

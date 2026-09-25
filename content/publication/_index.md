@@ -12,6 +12,8 @@ layout: "simple"
 
 ### Papers
 
+* T. Murakami, Y. Hashidate, and Y. Matsunaga* "Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction" Bioinformatics, btag685 (2026) [DOI:10.1093/bioinformatics/btag685](https://doi.org/10.1093/bioinformatics/btag685)
+
 * T. Kawai, and Y. Matsunaga* "AFM-Fold: Rapid reconstruction of protein conformations from AFM images" Biophysical Journal 125, 3845-3861 (2026) [DOI:10.1016/j.bpj.2026.06.022](https://doi.org/10.1016/j.bpj.2026.06.022)
 
 * 松永康佑*、大金智則、渕上壮太郎、高田彰二 "エンドツーエンド微分可能探針形状推定法によるAFM画像の鮮明化" 生物物理 65巻6号, 328-332 (2025) [DOI:10.2142/biophys.65.328](https://doi.org/10.2142/biophys.65.328)

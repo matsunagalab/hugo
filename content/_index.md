@@ -18,9 +18,9 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 
 ## News
 
-- [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
+- [Publication] September 19, 2026: A paper by Murakami-san, Hashidate-san, and Matsunaga, "[Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction](https://doi.org/10.1093/bioinformatics/btag685)", was published in Bioinformatics<br>[論文] 2026年9月19日 村上さん、外立さん、松永の論文 "[Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction](https://doi.org/10.1093/bioinformatics/btag685)" が Bioinformatics に出版されました
 
-- [Preprint] T. Murakami, Y. Hashidate, and Y. Matsunaga "[Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction](https://www.biorxiv.org/content/10.64898/2025.12.22.695878v1)"
+- [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
 
 - [Invited Talk] Matsunaga gave a talk titled "Tip shape estimation from AFM data and its application to biomolecular dynamics modeling" at The Japanese Society of Microscopy [Scanning Probe Microscopy Division 2024 Workshop](https://microscopy.or.jp/jsm2022/wp-content/uploads/2024/10/b15a333eada44726925860197606e317.pdf) held at Hokkaido University Enreisou on January 9, 2025 (presented on January 9)<br>[招待講演] 2025年1月9日に北海道大学エイレイソウで開催された日本顕微鏡学会 [走査型プローブ顕微鏡分科会 2024年度研究会](https://microscopy.or.jp/jsm2022/wp-content/uploads/2024/10/b15a333eada44726925860197606e317.pdf)で松永がタイトル「AFMデータからの探針形状推定と生体分子動態モデリングへの応用」(1月9日発表)で講演しました
 

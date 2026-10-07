@@ -12,6 +12,8 @@ layout: "simple"
 
 ### Papers
 
+* T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga* "Transfer learning from computed stability data for nanobody melting-temperature prediction" bioRxiv (2026) [DOI:10.64898/2026.07.30.741744](https://doi.org/10.64898/2026.07.30.741744)
+
 * T. Murakami, Y. Hashidate, and Y. Matsunaga* "Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction" Bioinformatics, btag685 (2026) [DOI:10.1093/bioinformatics/btag685](https://doi.org/10.1093/bioinformatics/btag685)
 
 * T. Kawai, and Y. Matsunaga* "AFM-Fold: Rapid reconstruction of protein conformations from AFM images" Biophysical Journal 125, 3845-3861 (2026) [DOI:10.1016/j.bpj.2026.06.022](https://doi.org/10.1016/j.bpj.2026.06.022)
@@ -103,10 +105,6 @@ layout: "simple"
 * 小松崎民樹、松永康佑 “タンパク質フォールディングのダイナミックス -異常拡散と階層的規則性-“ 生物物理 42, 285 (2002)
 
 * Y. Matsunaga, K. S. Kostov, and T. Komatsuzaki, “Multibasin Dynamics in Off-Lattice Minimalist Protein Landscapes” The Journal of Physical Chemistry A 106, 10898-10907 (2002)
-
-### Preprints
-
-* T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga* "Transfer learning from computed stability data for nanobody melting-temperature prediction" bioRxiv (2026) [DOI:10.64898/2026.07.30.741744](https://doi.org/10.64898/2026.07.30.741744)
 
 ### Proceedings
 

@@ -104,6 +104,10 @@ layout: "simple"
 
 * Y. Matsunaga, K. S. Kostov, and T. Komatsuzaki, “Multibasin Dynamics in Off-Lattice Minimalist Protein Landscapes” The Journal of Physical Chemistry A 106, 10898-10907 (2002)
 
+### Preprints
+
+* T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga* "Transfer learning from computed stability data for nanobody melting-temperature prediction" bioRxiv (2026) [DOI:10.64898/2026.07.30.741744](https://doi.org/10.64898/2026.07.30.741744)
+
 ### Proceedings
 
 * K. Hoshino, Y. Matsunaga, M. Miller, D. J. Wales, and T. Komatsuzaki, “A Coarse-Graining of Energy Landscapes of Proteins -Structural Stability of the Most Stable States-“ AIP conference series for Slow Dynamics in Complex Systems 708, 344-345 (2004)

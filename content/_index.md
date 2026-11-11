@@ -22,7 +22,7 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 - [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
 
 
-- [Invited Talk] Matsunaga gave a talk titled "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" at the 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience held at RIKEN Center for Computational Science (Kobe) from November 6-8, 2026<br>[招待講演] 2026年11月6日〜8日に理化学研究所 計算科学研究センター(神戸)で開催された 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience で松永がタイトル "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" で講演しました
+- [Invited Talk] Matsunaga gave a talk titled "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" at the 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience held at RIKEN Kobe Campus IIB Building (Integrated Innovation Building) from November 6-8, 2026<br>[招待講演] 2026年11月6日〜8日に理化学研究所神戸キャンパスIIB棟(融合連携イノベーション推進棟)で開催された 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience で松永がタイトル "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" で講演しました
 
 - [Invited Talk] Matsunaga gave a talk titled "MDClaw: Autonomous execution of reproducible molecular dynamics workflows by AI agents" at the 17th GENESIS Users' Group Meeting of the CBI Society Annual Meeting 2026 on October 27, 2026<br>[招待講演] 2026年10月27日 CBI学会2026年大会の GENESIS Users' Group 第17回研究会で松永がタイトル「MDClaw：AIエージェントによる再現可能な分子動力学ワークフローの自律実行」で講演しました
 

@@ -12,6 +12,8 @@ layout: "simple"
 
 ### Papers
 
+* Y. Matsunaga*, Y. Wu, Y. Zhang, S. Kumari, A. Enomoto, Y. Homma, S. Hatakeyama, and A. Shinobu "An auditable harness for biomolecular dynamics simulations by AI agents" bioRxiv (2026) [DOI:10.64898/2026.11.09.765490](https://doi.org/10.64898/2026.11.09.765490)
+
 * T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga* "Transfer learning from computed stability data for nanobody melting-temperature prediction" bioRxiv (2026) [DOI:10.64898/2026.07.30.741744](https://doi.org/10.64898/2026.07.30.741744)
 
 * T. Murakami, Y. Hashidate, and Y. Matsunaga* "Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction" Bioinformatics, btag685 (2026) [DOI:10.1093/bioinformatics/btag685](https://doi.org/10.1093/bioinformatics/btag685)

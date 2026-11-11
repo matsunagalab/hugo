@@ -18,6 +18,8 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 
 ## News
 
+- [Preprint] Y. Matsunaga, Y. Wu, Y. Zhang, S. Kumari, A. Enomoto, Y. Homma, S. Hatakeyama, and A. Shinobu "[An auditable harness for biomolecular dynamics simulations by AI agents](https://www.biorxiv.org/content/10.64898/2026.11.09.765490v1)"
+
 - [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
 
 - [Invited Talk] Matsunaga gave a talk titled "Tip shape estimation from AFM data and its application to biomolecular dynamics modeling" at The Japanese Society of Microscopy [Scanning Probe Microscopy Division 2024 Workshop](https://microscopy.or.jp/jsm2022/wp-content/uploads/2024/10/b15a333eada44726925860197606e317.pdf) held at Hokkaido University Enreisou on January 9, 2025 (presented on January 9)<br>[招待講演] 2025年1月9日に北海道大学エイレイソウで開催された日本顕微鏡学会 [走査型プローブ顕微鏡分科会 2024年度研究会](https://microscopy.or.jp/jsm2022/wp-content/uploads/2024/10/b15a333eada44726925860197606e317.pdf)で松永がタイトル「AFMデータからの探針形状推定と生体分子動態モデリングへの応用」(1月9日発表)で講演しました

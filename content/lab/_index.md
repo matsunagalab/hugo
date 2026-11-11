@@ -38,6 +38,10 @@ layout: "simple"
 - [Blenderチュートリアル](https://magic-bestseller-c34.notion.site/PC-2-Blender-1abf02a4a5e880ab9593ee064c57c0ba?source=copy_link)
 - [画像からmatplotlibコードbot](https://chatgpt.com/g/g-Qnv6cvunS-hua-xiang-karamatplotlibkoto)
 
+#### 学習ゲーム
+
+- [Amino-acids learner](https://www.bio.ics.saitama-u.ac.jp/game/amino-acids-learner/) 実在のタンパク質をアミノ酸1個ずつ組み立て、最後にPDBの立体構造へ折り畳むブラウザゲーム (スマートフォンでも遊べます)
+
 #### 教育用リポジトリ
 
 - [tutorial_hmm](https://github.com/matsunagalab/tutorial_hmm) 隠れマルコフモデルのチュートリアル

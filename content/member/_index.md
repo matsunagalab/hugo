@@ -30,6 +30,8 @@ layout: simple
 
 * M1 Yudai HOMMA (本間 雄大)
 
+* M1 Luxiang RONG (栄 路翔)
+
 * B4 Yusuke OKITA (沖田 佑介)
 
 * B4 Shion KINOSHITA (木下 枝苑)

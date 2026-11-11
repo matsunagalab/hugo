@@ -19,6 +19,8 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 ## News
 
 - [Preprint] Y. Matsunaga, Y. Wu, Y. Zhang, S. Kumari, A. Enomoto, Y. Homma, S. Hatakeyama, and A. Shinobu "[An auditable harness for biomolecular dynamics simulations by AI agents](https://www.biorxiv.org/content/10.64898/2026.11.09.765490v1)"
+- [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
+
 
 - [Invited Talk] Matsunaga gave a talk titled "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" at the 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience held at RIKEN Center for Computational Science (Kobe) from November 6-8, 2026<br>[招待講演] 2026年11月6日〜8日に理化学研究所 計算科学研究センター(神戸)で開催された 2026 Frontier Symposium in Computational and Experimental Biophysics and Bioscience で松永がタイトル "MDDB-AI Hub: An Evaluation Platform for Molecular Dynamics Surrogate Models" で講演しました
 
@@ -33,8 +35,6 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 - [Event] September 29, 2026: Master's 2nd year students Yuda-san and Suto-san presented at the master's thesis interim examination<br>[イベント] 2026年9月29日 修士2年生の湯田さんと須藤さんが修士論文中間審査会で発表しました
 
 - [Publication] September 19, 2026: A paper on the mechanistic interpretation of protein language models for nanobody thermostability prediction, with doctoral student Murakami-san and Hashidate-san, "[Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction](https://doi.org/10.1093/bioinformatics/btag685)" was published in Bioinformatics<br>[論文] 2026年9月19日 Bioinformatics に博士課程の村上さんと外立さんとのVHH抗体の熱安定性予測モデルの機構的解釈に関する論文 "[Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction](https://doi.org/10.1093/bioinformatics/btag685)" が掲載されました
-
-- [Preprint] T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga "[Transfer learning from computed stability data for nanobody melting-temperature prediction](https://www.biorxiv.org/content/10.64898/2026.07.30.741744v1)"
 
 - [Book] July 27, 2026: The Japanese edition of "Protein Actions" (I. Bahar, R. L. Jernigan, and K. A. Dill; translated by Prof. Hiroshi Fujisaki and Yuri Fujisaki) was published by Kyoritsu Shuppan. Matsunaga is one of the authors and wrote two new appendix chapters, on protein structure prediction by neural networks (AlphaFold 2) and on structural analysis by cryo-electron microscopy<br>[書籍] 2026年7月27日 『タンパク質の動きと機能―原理・モデリングから創薬まで―』(I. Bahar・R. L. Jernigan・K. A. Dill 原著、藤崎弘士先生・藤崎百合さん 訳、松永康佑 著)が共立出版から出版されました。松永は著者の一人として、付録の「ニューラルネットワークによるタンパク質構造予測：AlphaFold 2」と「クライオ電子顕微鏡による構造解析」の2章を書き下ろしました
 

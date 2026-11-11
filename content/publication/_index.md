@@ -16,6 +16,8 @@ layout: "simple"
 
 * T. Murakami, K. Sasaki, S. Oda, K. Okada, and Y. Matsunaga* "Transfer learning from computed stability data for nanobody melting-temperature prediction" bioRxiv (2026) [DOI:10.64898/2026.07.30.741744](https://doi.org/10.64898/2026.07.30.741744)
 
+* 松永康佑、石曽根毅、渕上壮太郎、中村和幸 "変分オートエンコーダによるタンパク質ダイナミクスの表現学習" アンサンブル 28巻4号(通巻116号), 137-144 (2026)
+
 * T. Murakami, Y. Hashidate, and Y. Matsunaga* "Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction" Bioinformatics, btag685 (2026) [DOI:10.1093/bioinformatics/btag685](https://doi.org/10.1093/bioinformatics/btag685)
 
 * T. Kawai, and Y. Matsunaga* "AFM-Fold: Rapid reconstruction of protein conformations from AFM images" Biophysical Journal 125, 3845-3861 (2026) [DOI:10.1016/j.bpj.2026.06.022](https://doi.org/10.1016/j.bpj.2026.06.022)

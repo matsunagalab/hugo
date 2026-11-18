@@ -13,8 +13,8 @@
   --yellow: #F2B90C;
   --orange: #F27A1A;
   --red: #E23D5B;
-  --display: "Bricolage Grotesque", "Noto Sans JP", sans-serif;
-  --body: "IBM Plex Sans", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --display: "Bricolage Grotesque", "Noto Sans JP", sans-serif;   /* English titles only */
+  --body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
   --wrap: 72rem;
 }
 
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img, iframe, canvas { max-width: 100%; }
-:lang(ja) { font-family: "Noto Sans JP", "Hiragino Sans", sans-serif; }
 a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 2px; }
@@ -95,7 +94,7 @@ a:hover { text-decoration-thickness: 2px; }
 .page-body { padding-block: clamp(2rem, 5vw, 4rem); }
 .page-body.has-toc { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 4rem; align-items: start; }
 .toc { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow: auto; font-size: 0.875rem; line-height: 1.5; }
-.toc-title { font-family: var(--display); font-weight: 700; margin: 0 0 0.75rem; font-size: 1rem; }
+.toc-title { font-weight: 700; margin: 0 0 0.75rem; font-size: 1rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
 .toc ul ul ul ul { padding-left: 0.9rem; }
 .toc li { margin: 0; }
@@ -110,13 +109,13 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---- Text ---- */
 .prose { max-width: 42rem; }
-.prose .h-ja { display: block; font-size: 0.82em; font-weight: 700; margin-top: 0.15em; }
+.prose .h-ja { display: block; font-size: 0.8em; margin-top: 0.1em; }
 .prose > :first-child { margin-top: 0; }
 .prose p { margin: 0 0 1.25rem; }
-.prose h2, .prose h3, .prose h4, .prose h5 { font-family: var(--display); letter-spacing: -0.015em; line-height: 1.25; scroll-margin-top: 1.5rem; text-wrap: balance; }
-.prose h2, .prose h3 { font-weight: 800; font-size: 1.9rem; margin: 3.5rem 0 1.25rem; }
-.prose h4 { font-weight: 700; font-size: 1.35rem; margin: 2.75rem 0 1rem; }
-.prose h5 { font-weight: 700; font-size: 1.1rem; margin: 2rem 0 0.75rem; }
+.prose h2, .prose h3, .prose h4, .prose h5 { font-weight: 700; line-height: 1.4; scroll-margin-top: 1.5rem; text-wrap: balance; }
+.prose h2, .prose h3 { font-size: 1.75rem; margin: 3.5rem 0 1.25rem; }
+.prose h4 { font-size: 1.3rem; margin: 2.75rem 0 1rem; }
+.prose h5 { font-size: 1.075rem; margin: 2rem 0 0.75rem; }
 .prose ul, .prose ol { padding-left: 1.4rem; margin: 0 0 1.25rem; }
 .prose li { margin-bottom: 0.6rem; }
 .prose li > ul, .prose li > ol { margin-top: 0.6rem; }

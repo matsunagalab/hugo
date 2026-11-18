@@ -9,7 +9,6 @@ enableImageLazyLoading = true
 
 [header]
   layout = "basic"
-  logo = "img/mats04.png"
   showTitle = false
 
 [footer]

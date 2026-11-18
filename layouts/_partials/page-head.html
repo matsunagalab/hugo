@@ -1,0 +1,6 @@
+<div class="page-head wrap">
+  {{ with .Parent }}{{ if not .IsHome }}<p class="crumb"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+  {{ if and .IsPage (not .Date.IsZero) (eq .Section "post") }}<p class="page-desc"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>{{ end }}
+</div>

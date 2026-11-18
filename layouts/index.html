@@ -1,0 +1,16 @@
+{{ define "top" }}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1>{{ .Description }}</h1>
+  </div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+{{ $parts := split .Content "<hr>" }}
+{{/* "English<br>日本語" paragraphs are set side by side */}}
+<div class="wrap intro">{{ index $parts 0 | replaceRE `(?s)<p>((?:[^<]|<[^/]|</[^p])*?)<br>\s*(.*?)</p>` `<div class="bi"><p>$1</p><p lang="ja">$2</p></div>` | safeHTML }}</div>
+<div class="wrap news prose" id="news">
+  {{ delimit (after 1 $parts) "<hr>" | safeHTML }}
+</div>
+{{ end }}

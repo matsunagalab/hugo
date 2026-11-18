@@ -1,0 +1,22 @@
+{{ $toc := gt (len (findRE "<h[2345][ >]" .Content)) 4 }}
+<div class="wrap page-body{{ if $toc }} has-toc{{ end }}">
+  {{ if $toc }}
+  <aside class="toc" aria-label="On this page">
+    <p class="toc-title">On this page</p>
+    {{ .TableOfContents }}
+  </aside>
+  {{ end }}
+  <article class="prose">
+    {{ .Content }}
+    {{ if .IsNode }}
+      {{ $pages := where .Pages "Params.showInList" "ne" false }}
+      {{ with $pages }}
+      <ul class="page-list">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if not .Date.IsZero }} <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    {{ end }}
+  </article>
+</div>

@@ -16,7 +16,7 @@ hasCJKLanguage = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.tableOfContents]
-    endLevel = 4
+    endLevel = 5
     startLevel = 2
   [markup.highlight]
     noClasses = false

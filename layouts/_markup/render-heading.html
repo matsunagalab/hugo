@@ -1,0 +1,8 @@
+{{- $parts := split .Text " / " -}}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+{{- if eq (len $parts) 2 -}}
+<span>{{ index $parts 0 | safeHTML }}</span> <span class="h-ja" lang="ja">{{ index $parts 1 | safeHTML }}</span>
+{{- else -}}
+{{ .Text | safeHTML }}
+{{- end -}}
+</h{{ .Level }}>

@@ -109,6 +109,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---- Text ---- */
 .prose { max-width: 42rem; }
+.page-body:not(.has-toc) .prose { max-width: none; }   /* no table of contents: use the full width */
 .prose .h-ja { display: block; font-size: 0.8em; margin-top: 0.1em; }
 .prose > :first-child { margin-top: 0; }
 .prose p { margin: 0 0 1.25rem; }

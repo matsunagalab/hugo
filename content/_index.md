@@ -386,27 +386,71 @@ For an introduction to our lab, please see the [Lab Report](https://www.jstage.j
 
 ### Contact
 
+<div class="bi"><div>
+
 #### Address
+
+Matsunaga Lab  
+Department of Information and Computer Sciences  
+Faculty of Engineering, Saitama University  
+255 Shimo-Okubo, Sakura-ku, Saitama 338-8570, Japan
+
+</div><div lang="ja">
+
+#### 住所
 
 〒338-8570  
 埼玉県さいたま市桜区大字下大久保255  
 埼玉大学工学部情報工学科  
 松永研究室
 
+</div></div>
+
+<div class="bi"><div>
+
 #### Room
+
+Information and Computer Sciences Building  
+2F: Room 208 (undergraduate students), Room 218 (graduate students)  
+3F: Room 310 (faculty office)
+
+</div><div lang="ja">
+
+#### 部屋
 
 情報工学科棟  
 2F 208号室(4年生部屋)、218号室(院生部屋)  
 3F 310号室(教員居室)
 
+</div></div>
+
+<div class="bi"><div>
+
 #### E-mail
 
 ymatsunaga@mail.saitama-u.ac.jp
+
+</div><div lang="ja">
+
+#### メール
+
+ymatsunaga@mail.saitama-u.ac.jp
+
+</div></div>
 
 ---
 
 ### Links
 
+<div class="bi"><div>
+
+- [Department of Information and Computer Sciences, Faculty of Engineering, Saitama University](http://www.ics.saitama-u.ac.jp)
+- [Graduate School of Science and Engineering, Saitama University](http://www.saitama-u.ac.jp/rikogaku/)
+
+</div><div lang="ja">
+
 - [埼玉大学工学部情報工学科](http://www.ics.saitama-u.ac.jp)
 - [埼玉大学大学院理工学研究科](http://www.saitama-u.ac.jp/rikogaku/)
+
+</div></div>
 

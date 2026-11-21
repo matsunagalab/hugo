@@ -76,12 +76,18 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .intro { padding-top: clamp(2rem, 5vw, 3.5rem); }
 .intro .lead { display: none; }   /* same words as the h1 above */
-.intro .bi { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 3rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+.bi { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 3rem; }
+.intro .bi { padding-block: 1rem; border-bottom: 1px solid var(--line); }
 .intro .bi p { margin: 0; font-size: 1rem; line-height: 1.75; }
 .intro .bi:first-of-type p { font-size: 1.1875rem; }
+/* Contact and Links: English on the left, Japanese on the right */
+.news .bi > div > :first-child { margin-top: 0; }
+.news .bi > div > :last-child { margin-bottom: 0; }
+.news .bi + .bi { margin-top: 1.75rem; }
 @media (max-width: 899px) {
-  .intro .bi { display: block; }
+  .bi { display: block; }
   .intro .bi p + p { margin-top: 0.5rem; }
+  .news .bi > div + div { margin-top: 1rem; }
 }
 
 /* ---- Inner pages: title band ---- */
